@@ -10,32 +10,32 @@
 \contentsline {section}{\numberline {2.2}Kaldbearbeiding}{2}{section.2.2}
 \contentsline {section}{\numberline {2.3}Gripemekanisme}{2}{section.2.3}
 \contentsline {section}{\numberline {2.4}Belastninger}{2}{section.2.4}
-\contentsline {chapter}{\numberline {3}Konstruksjon og styring}{6}{chapter.3}
-\contentsline {section}{\numberline {3.1}Utstyr}{6}{section.3.1}
-\contentsline {section}{\numberline {3.2}Design}{6}{section.3.2}
-\contentsline {section}{\numberline {3.3}Materialer}{7}{section.3.3}
-\contentsline {section}{\numberline {3.4}Mating av r\IeC {\o }r}{7}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Gripehus}{8}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Opplagring}{10}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Rotasjon av r\IeC {\o }r}{10}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Elektrisk sylinder}{10}{subsection.3.5.1}
-\contentsline {section}{\numberline {3.6}B\IeC {\o }yemekanisme}{10}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Sf\IeC {\ae }risk lager}{10}{subsection.3.6.1}
-\contentsline {section}{\numberline {3.7}XY-bord}{10}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Ledeskinne}{12}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Ledeskrue}{12}{subsection.3.7.2}
-\contentsline {subsection}{\numberline {3.7.3}Motorer}{12}{subsection.3.7.3}
-\contentsline {section}{\numberline {3.8}Motordrivere}{12}{section.3.8}
-\contentsline {section}{\numberline {3.9}Mach3-software}{12}{section.3.9}
-\contentsline {chapter}{\numberline {4}Resultater}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Analyse}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Testing av r\IeC {\o }r}{13}{section.4.2}
-\contentsline {chapter}{\numberline {5}Diskusjon}{14}{chapter.5}
-\contentsline {section}{\numberline {5.1}Prinsipper, Forhold, Generaliseringer}{14}{section.5.1}
-\contentsline {section}{\numberline {5.2}Presentasjon av analyse, modell eller teori}{14}{section.5.2}
-\contentsline {section}{\numberline {5.3}(Utfordringer)}{14}{section.5.3}
-\contentsline {section}{\numberline {5.4}(Mulige forbedringer)}{14}{section.5.4}
-\contentsline {chapter}{\numberline {6}Konklusjon}{15}{chapter.6}
-\contentsline {chapter}{\numberline {A}}{16}{appendix.A}
-\contentsline {chapter}{\numberline {B}}{18}{appendix.B}
-\contentsline {chapter}{\numberline {C}}{19}{appendix.C}
+\contentsline {chapter}{\numberline {3}Konstruksjon og styring}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Utstyr}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Design}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}Materialer}{8}{section.3.3}
+\contentsline {section}{\numberline {3.4}Mating av r\IeC {\o }r}{8}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Gripehus}{9}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Opplagring}{11}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Rotasjon av r\IeC {\o }r}{11}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Elektrisk sylinder}{11}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.6}B\IeC {\o }yemekanisme}{11}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Sf\IeC {\ae }risk lager}{11}{subsection.3.6.1}
+\contentsline {section}{\numberline {3.7}XY-bord}{11}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Ledeskinne}{13}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Ledeskrue}{13}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}Motorer}{13}{subsection.3.7.3}
+\contentsline {section}{\numberline {3.8}Motordrivere}{13}{section.3.8}
+\contentsline {section}{\numberline {3.9}Mach3-software}{13}{section.3.9}
+\contentsline {chapter}{\numberline {4}Resultater}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}Analyse}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}Testing av r\IeC {\o }r}{14}{section.4.2}
+\contentsline {chapter}{\numberline {5}Diskusjon}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Prinsipper, Forhold, Generaliseringer}{15}{section.5.1}
+\contentsline {section}{\numberline {5.2}Presentasjon av analyse, modell eller teori}{15}{section.5.2}
+\contentsline {section}{\numberline {5.3}(Utfordringer)}{15}{section.5.3}
+\contentsline {section}{\numberline {5.4}(Mulige forbedringer)}{15}{section.5.4}
+\contentsline {chapter}{\numberline {6}Konklusjon}{16}{chapter.6}
+\contentsline {chapter}{\numberline {A}}{17}{appendix.A}
+\contentsline {chapter}{\numberline {B}}{19}{appendix.B}
+\contentsline {chapter}{\numberline {C}}{20}{appendix.C}

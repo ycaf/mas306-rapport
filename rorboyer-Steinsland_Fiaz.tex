@@ -157,9 +157,9 @@ u=\rho\cdot(1-cos\alpha)
 V=\rho\cdot sin \alpha
 \end{equation}
 Hvor: \\
-$u$=Maksimal forskyvning på skinnene\\
+$u$=Forskyvning på skinnene\\
 $V$=Avstand fra stuss og senter av sfærisk lager \\
-$\alpha$=Maksimal bøyeradius i radianer\\
+$\alpha$=Bøyeradius i radianer\\
 $\rho$= Radius av bøyen på røret 
 \\
 
@@ -168,7 +168,7 @@ $V$ og $u$ er konstanter som kan hentes ut i fra konstruksjonen. Vi sitter da ig
 u=\frac{V}{sin\alpha}\cdot(1-cos\alpha)
 \end{equation}
 
-Denne ligningen kan løses grafisk. Ved å finne det maksimale $u$ kan være, f.inner man den maksimale bøyeradien som er mulig å oppnå. Det er da mulig å løse ligning 2.4 og finne $\rho$.
+Denne ligningen kan løses grafisk. Ved å finne det maksimale $u$ kan være, finner man den maksimale bøyeradien som er mulig å oppnå. Det er da mulig å løse ligning 2.4 og finne $\rho$.
 
 \begin{eqnarray}\label{rho}
 \rho=\frac{u}{1-cos\alpha}
@@ -195,7 +195,7 @@ $E$=Elasitetsmodulen\\
 $\sigma_y$=Flytegrensen til metallet\\
  
  I figur 2.2 er det illustrert med to røde streker hvor overgangen fra den elastiske deformasjonen til plastisk deformasjon vil skjer. Lengden $y$ er ukjent, så nøyaktig hvor dette skille går finner man ikke ut før man har løst ligning 2.8. 
-\begin{figure}
+\begin{figure}[h!]
 \centering
 \includegraphics[scale=0.5]{Pics/plastisk.png}
 \caption[Plastisk deformasjon]{llustrasjon om hvor det plastiske området begynner}
@@ -217,14 +217,17 @@ M_P&=&\int_{F}y dF \Downarrow \nonumber\\
 &=&\frac{2}{3}\cdot\sigma_y((R_1^2-y_1^2)^\frac{3}{2}-(R_2^2-y_1^2)^\frac{3}{2})
 \end{eqnarray}
 Hvor:\\
+$M_P$=Moment for å oppnå plastisk deformasjon\\
 $\sigma_y$=Flytegrensen\\ 
+$b_1$=Bredden fra senterlinje til yttersiden av røret\\
+$b_2$=Bredden fra senterlinje til innsiden av røret\\
 $R_1$=Ytre radius\\
 $R_2$=Indre radius\\
 $y_1$= Grensen til plastisk deformasjon\\
 
 Momentene som regnes ut i ligning 2.10 og 2.11 er kun for halve høyden av røret, så svaret må ganges med to. I figur 2.3 er samme rør illustret på nytt, men denne gangen med hensyn på den elastiske deformasjonen. Det er 
 
-\begin{figure}
+\begin{figure}[h!]
 \centering
 \includegraphics[scale=0.5]{Pics/elastisk.png}
 \caption[Elastisk deformasjon]{Illustrasjon av hvor det elastiske området vil befinne seg}
@@ -237,7 +240,10 @@ M_E&=&\int_{F}ydF\Downarrow\nonumber\\
 &=&2\frac{\sigma_y}{y_1}\cdot(-y_1\frac{(R_1^2-y_1^2)^\frac{3}{2}}{4})+\frac{R_1^2\cdot y_1\sqrt{R_1-y_1^2}}{8}+\frac{R_1^4}{8}\cdot\arcsin\frac{y_1}{R_1}\nonumber\\ &-& 2\frac{\sigma_y}{y_1}\cdot(-y_1\frac{(R_2^2-y_1^2)^\frac{3}{2}}{4})+\frac{R_2^2\cdot y_1\sqrt{R_2-y_1^2}}{8}+\frac{R_2^4}{8}\cdot\arcsin\frac{y_1}{R_2}
 \end{eqnarray}
 Hvor:\\
+$M_E$=Momentet for å oppnå elastisk deformasjon\\
 $\sigma_y$=Flytegrensen\\ 
+$b_1$=Bredden fra senterlinje til yttersiden av røret\\
+$b_2$=Bredden fra senterlinje til innsiden av røret\\
 $R_1$=Ytre radius\\
 $R_2$=Indre radius\\
 $y_1$= Avstanden opp til plastisk deformasjon\\
@@ -246,11 +252,19 @@ $y_1$= Avstanden opp til plastisk deformasjon\\
 M_E+M_P&=&V\cdot N_1\Downarrow\nonumber\\
 N_1&=&\frac{M_E+M_P}{V}
 \end{eqnarray}
+Hvor:\\
+$M_E$=Momentet for å oppnå elastisk deformasjon\\ 
+$M_P$=Momentet for å oppnå plastisk deformasjon\\ 
+$N_1$=Kraften som står vinkelrett på røret\\
 
 \begin{eqnarray}\label{pl}
 \sum F_x=0N&=&-P_L+N_1\cdot \cos(\frac{\pi}{2}-\alpha)\Downarrow\nonumber\\
 P_L&=&N_1\cdot\cos(\frac{\pi}{2}-\alpha)
 \end{eqnarray}
+
+Hvor:\\
+$P_L$=Kraften som må til for å dytte røret\\ 
+$N_1$=Kraften som står vinkelrett på røret\\
 
 \chapter{Konstruksjon og styring}
 (Her beskrives fremgangsmåten i detalj slik at resultatet kan reproduseres av andre)
