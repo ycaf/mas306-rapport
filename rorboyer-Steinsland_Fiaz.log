@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.17)  6 MAY 2018 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.17)  6 MAY 2018 17:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -629,23 +629,13 @@ Kapittel 1.
 
 ]
 Kapittel 2.
-
-Overfull \hbox (37.34084pt too wide) in paragraph at lines 140--141
-\T1/lmr/m/n/10.95 leng-de/has-tig-het og sli-ke ting. M-funksjonene er hjel-pen
--de funk-sjo-ner som stopp/start, på/av[][]Industriskolen[][]. 
- []
-
 <Pics/krefterror.png, id=286, 575.14874pt x 386.44376pt>
 File: Pics/krefterror.png Graphic file (type png)
 
 <use Pics/krefterror.png>
 Package pdftex.def Info: Pics/krefterror.png used on input line 149.
 (pdftex.def)             Requested size: 287.57367pt x 193.2214pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2
+ [2
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 159--165
@@ -683,89 +673,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--253
 Underfull \vbox (badness 2005) has occurred while \output is active []
 
  [5 <./Pics/elastisk.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 257--262
+Underfull \hbox (badness 10000) in paragraph at lines 260--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--271
+Underfull \hbox (badness 10000) in paragraph at lines 269--272
 
  []
 
 [6]
 Kapittel 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 278--280
-
- []
-
-<Pics/prinsippSkisse_1.png, id=348, 968.11688pt x 718.18312pt>
+<Pics/prinsippSkisse_1.png, id=347, 968.11688pt x 718.18312pt>
 File: Pics/prinsippSkisse_1.png Graphic file (type png)
 
 <use Pics/prinsippSkisse_1.png>
 Package pdftex.def Info: Pics/prinsippSkisse_1.png used on input line 283.
-(pdftex.def)             Requested size: 290.4373pt x 215.45659pt.
+(pdftex.def)             Requested size: 193.61993pt x 143.63408pt.
 
-<BildeZY.PNG, id=349, 802.49812pt x 535.2497pt>
+<BildeZY.PNG, id=348, 802.49812pt x 535.2497pt>
 File: BildeZY.PNG Graphic file (type png)
  <use BildeZY.PNG>
-Package pdftex.def Info: BildeZY.PNG used on input line 290.
+Package pdftex.def Info: BildeZY.PNG used on input line 292.
 (pdftex.def)             Requested size: 240.75128pt x 160.57614pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<rontgenYskrue.PNG, id=352, 580.41844pt x 633.11531pt>
+
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
+ [7
+
+ <./Pics/prinsippSkisse_1.png>] <rontgenYskrue.PNG, id=356, 580.41844pt x 633.1
+1531pt>
 File: rontgenYskrue.PNG Graphic file (type png)
- <use rontgenYskrue.PNG>
-Package pdftex.def Info: rontgenYskrue.PNG used on input line 299.
+
+<use rontgenYskrue.PNG>
+Package pdftex.def Info: rontgenYskrue.PNG used on input line 302.
 (pdftex.def)             Requested size: 174.12688pt x 189.93605pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<RontgenXskrue.PNG, id=353, 609.02531pt x 649.67719pt>
+ <RontgenXskrue.PNG, id=357, 609.02531pt x 649.67719pt>
 File: RontgenXskrue.PNG Graphic file (type png)
- <use RontgenXskrue.PNG>
-Package pdftex.def Info: RontgenXskrue.PNG used on input line 307.
+
+<use RontgenXskrue.PNG>
+Package pdftex.def Info: RontgenXskrue.PNG used on input line 310.
 (pdftex.def)             Requested size: 182.709pt x 194.90465pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<IMG_E1818.jpg, id=358, 2860.6875pt x 3816.2575pt>
-File: IMG_E1818.jpg Graphic file (type jpg)
- <use IMG_E1818.jpg>
-Package pdftex.def Info: IMG_E1818.jpg used on input line 320.
-(pdftex.def)             Requested size: 143.04276pt x 190.82405pt.
- [7
-
-]
-[8 <./Pics/prinsippSkisse_1.png> <./BildeZY.PNG> <./rontgenYskrue.PNG>]
-<Pics/ugraf.png, id=376, 562.1pt x 421.575pt>
-File: Pics/ugraf.png Graphic file (type png)
- <use Pics/ugraf.png>
-Package pdftex.def Info: Pics/ugraf.png used on input line 337.
-(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9 <./RontgenXskrue.PNG> <./IMG_E1818.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 352--353
-
- []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <./Pics/ugraf.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 406--407
+ [8 <./BildeZY.PNG> <./rontgenYskrue.PNG>]
+<IMG_E1818.jpg, id=368, 2860.6875pt x 3816.2575pt>
+File: IMG_E1818.jpg Graphic file (type jpg)
+ <use IMG_E1818.jpg>
+Package pdftex.def Info: IMG_E1818.jpg used on input line 323.
+(pdftex.def)             Requested size: 143.04276pt x 190.82405pt.
+ [9 <./RontgenXskrue.PNG> <./IMG_E1818.jpg>]
+<Pics/ugraf.png, id=380, 562.1pt x 421.575pt>
+File: Pics/ugraf.png Graphic file (type png)
+ <use Pics/ugraf.png>
+Package pdftex.def Info: Pics/ugraf.png used on input line 340.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
+
+ []
+
+[10 <./Pics/ugraf.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
 
  []
 
@@ -773,34 +756,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--409
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-<Pics/driverConn.pdf, id=406, 271.70473pt x 265.66762pt>
+<Pics/driverConn.pdf, id=405, 271.70473pt x 265.66762pt>
 File: Pics/driverConn.pdf Graphic file (type pdf)
 
 <use Pics/driverConn.pdf>
-Package pdftex.def Info: Pics/driverConn.pdf used on input line 418.
+Package pdftex.def Info: Pics/driverConn.pdf used on input line 421.
 (pdftex.def)             Requested size: 489.06812pt x 478.20134pt.
 
-Overfull \hbox (19.59766pt too wide) in paragraph at lines 418--419
+Overfull \hbox (19.59766pt too wide) in paragraph at lines 421--422
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--424
+Underfull \hbox (badness 10000) in paragraph at lines 425--427
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
 
 [13 <./Pics/driverConn.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
+Underfull \hbox (badness 10000) in paragraph at lines 441--441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--464
+Underfull \hbox (badness 10000) in paragraph at lines 467--467
 
  []
 
@@ -819,13 +802,13 @@ Kapittel 6.
 ]
 Tillegg A.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 494.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 497.
+(Font)              <5> on input line 497.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 500.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 521.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 524.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ts1lmr.fd
@@ -841,18 +824,18 @@ Tillegg C.
 (./rorboyer-Steinsland_Fiaz.bbl [21
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 613.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 616.
  [22
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 613.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 616.
  (./rorboyer-Steinsland_Fiaz.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 613.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 613.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 616.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 616.
 Package rerunfilecheck Info: File `rorboyer-Steinsland_Fiaz.out' has not change
 d.
 (rerunfilecheck)             Checksum: 7A5131EE2A920E60DD941AB384BCA213;2334.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 613.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 616.
  ) 
 Here is how much of TeX's memory you used:
  9863 strings out of 492995
@@ -881,10 +864,10 @@ xmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/f
 onts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/lm/lmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/
 lmtt8.pfb>
-Output written on rorboyer-Steinsland_Fiaz.pdf (30 pages, 3103210 bytes).
+Output written on rorboyer-Steinsland_Fiaz.pdf (30 pages, 3103877 bytes).
 PDF statistics:
- 722 PDF objects out of 1000 (max. 8388607)
- 637 compressed objects within 7 object streams
+ 721 PDF objects out of 1000 (max. 8388607)
+ 636 compressed objects within 7 object streams
  225 named destinations out of 1000 (max. 500000)
  376 words of extra memory for PDF output out of 10000 (max. 10000000)
 
