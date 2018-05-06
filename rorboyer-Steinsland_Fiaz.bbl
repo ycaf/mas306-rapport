@@ -1,0 +1,46 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Igus()]{Igus}
+Igus.
+\newblock igubal® spherical bearings.
+\newblock URL \url{https://www.igus.no/wpck/11041/banderole_igubal}.
+
+\bibitem[IgusG()]{IgusG}
+IgusG.
+
+\bibitem[IgusQ2()]{IgusQ2}
+IgusQ2.
+\newblock iglidur® q2, sleeve bearing with flange, mm.
+\newblock URL \url{https://www.igus.no/product/?artnr=Q2FM-2023-21}.
+
+\bibitem[Industriskolen()]{Niskolen}
+Industriskolen.
+\newblock Grunnlegende innføring i cnc-teknikk.
+\newblock URL
+  \url{http://www.niskolen.no/pil/Medlem/Kurs/cnc_teknikk/story_content/external_files/CNC_VG2.pdf}.
+
+\bibitem[Network()]{NorskDatakunnskapNetwork}
+Norsk~Datakunnskap Network.
+\newblock Hva er cnc-maskiner.
+\newblock URL
+  \url{http://www.datamaskin.biz/Programmering/computer-programming-languages/88807.html#.WtSP6C_JLL8}.
+
+\bibitem[Sclater(2011)]{N.Sclater}
+Neil Sclater.
+\newblock \emph{Mechanisms and Mechanical Devices}.
+\newblock The McGraw-Hill Companies, fifth edition, 2011.
+\newblock Page:247.
+
+\bibitem[W.~Pawlus(2016)]{HydVsEl}
+M.R.~Hansen W.~Pawlus, M.~Choux.
+\newblock Hydraulic vs. electric: A review of actuationsystems in offshore
+  drilling equipment.
+\newblock \emph{Modeling, Identification and Control}, \penalty0 (1):\penalty0
+  4--6, 2016.
+
+\end{thebibliography}

@@ -1,0 +1,40 @@
+\BOOKMARK [0][-]{chapter*.3}{List of Figures}{}% 1
+\BOOKMARK [0][-]{chapter*.4}{List of Tables}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introduksjon}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Metodikk}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Avgrensning}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{Eksisterende r\370rb\370yeteknikker}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Teori}{}% 7
+\BOOKMARK [1][-]{section.2.1}{CNC-styring}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Kaldbearbeiding}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Gripemekanisme}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.4}{Belastninger}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Konstruksjon og styring}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Utstyr}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{Design}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.3}{Materialer}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.4}{Mating av r\370r}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.4.1}{Gripehus}{section.3.4}% 17
+\BOOKMARK [2][-]{subsection.3.4.2}{Opplagring}{section.3.4}% 18
+\BOOKMARK [1][-]{section.3.5}{Rotasjon av r\370r}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.5.1}{Elektrisk sylinder}{section.3.5}% 20
+\BOOKMARK [1][-]{section.3.6}{B\370yemekanisme}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.6.1}{Sf\346risk lager}{section.3.6}% 22
+\BOOKMARK [1][-]{section.3.7}{XY-bord}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.7.1}{Ledeskinne}{section.3.7}% 24
+\BOOKMARK [2][-]{subsection.3.7.2}{Ledeskrue}{section.3.7}% 25
+\BOOKMARK [2][-]{subsection.3.7.3}{Motorer}{section.3.7}% 26
+\BOOKMARK [1][-]{section.3.8}{Motordrivere}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.9}{Mach3-software}{chapter.3}% 28
+\BOOKMARK [0][-]{chapter.4}{Resultater}{}% 29
+\BOOKMARK [1][-]{section.4.1}{Analyse}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.2}{Testing av r\370r}{chapter.4}% 31
+\BOOKMARK [0][-]{chapter.5}{Diskusjon}{}% 32
+\BOOKMARK [1][-]{section.5.1}{Prinsipper, Forhold, Generaliseringer}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.2}{Presentasjon av analyse, modell eller teori}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.3}{\(Utfordringer\)}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.4}{\(Mulige forbedringer\)}{chapter.5}% 36
+\BOOKMARK [0][-]{chapter.6}{Konklusjon}{}% 37
+\BOOKMARK [0][-]{appendix.A}{}{}% 38
+\BOOKMARK [0][-]{appendix.B}{}{}% 39
+\BOOKMARK [0][-]{appendix.C}{}{}% 40
