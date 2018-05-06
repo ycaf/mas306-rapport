@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.17)  6 MAY 2018 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.17)  6 MAY 2018 18:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -635,25 +635,25 @@ Kapittel 2.
 File: Pics/krefterror.png Graphic file (type png)
 
 <use Pics/krefterror.png>
-Package pdftex.def Info: Pics/krefterror.png used on input line 153.
+Package pdftex.def Info: Pics/krefterror.png used on input line 154.
 (pdftex.def)             Requested size: 287.57367pt x 193.2214pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--169
+Underfull \hbox (badness 10000) in paragraph at lines 164--170
 
  []
 
 [3 <./Pics/krefterror.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 194--201
+Underfull \hbox (badness 10000) in paragraph at lines 195--202
 
  []
 
 <Pics/plastisk.png, id=316, 592.2125pt x 489.83pt>
 File: Pics/plastisk.png Graphic file (type png)
  <use Pics/plastisk.png>
-Package pdftex.def Info: Pics/plastisk.png used on input line 205.
+Package pdftex.def Info: Pics/plastisk.png used on input line 206.
 (pdftex.def)             Requested size: 296.10551pt x 244.9144pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--233
+Underfull \hbox (badness 10000) in paragraph at lines 225--234
 
  []
 
@@ -661,20 +661,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 224--233
 <Pics/elastisk.png, id=333, 576.1525pt x 500.87125pt>
 File: Pics/elastisk.png Graphic file (type png)
  <use Pics/elastisk.png>
-Package pdftex.def Info: Pics/elastisk.png used on input line 238.
+Package pdftex.def Info: Pics/elastisk.png used on input line 239.
 (pdftex.def)             Requested size: 288.07553pt x 250.435pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--257
+Underfull \hbox (badness 10000) in paragraph at lines 249--258
 
  []
 
 [5 <./Pics/elastisk.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 264--267
+Underfull \hbox (badness 10000) in paragraph at lines 265--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--276
+Underfull \hbox (badness 10000) in paragraph at lines 274--277
 
  []
 
@@ -684,13 +684,13 @@ Kapittel 3.
 File: Pics/prinsippSkisse_1.png Graphic file (type png)
 
 <use Pics/prinsippSkisse_1.png>
-Package pdftex.def Info: Pics/prinsippSkisse_1.png used on input line 287.
+Package pdftex.def Info: Pics/prinsippSkisse_1.png used on input line 288.
 (pdftex.def)             Requested size: 193.61993pt x 143.63408pt.
 
 <BildeZY.PNG, id=348, 802.49812pt x 535.2497pt>
 File: BildeZY.PNG Graphic file (type png)
  <use BildeZY.PNG>
-Package pdftex.def Info: BildeZY.PNG used on input line 296.
+Package pdftex.def Info: BildeZY.PNG used on input line 297.
 (pdftex.def)             Requested size: 240.75128pt x 160.57614pt.
 
 
@@ -706,13 +706,13 @@ Underfull \vbox (badness 2698) has occurred while \output is active []
 File: rontgenYskrue.PNG Graphic file (type png)
 
 <use rontgenYskrue.PNG>
-Package pdftex.def Info: rontgenYskrue.PNG used on input line 306.
+Package pdftex.def Info: rontgenYskrue.PNG used on input line 307.
 (pdftex.def)             Requested size: 174.12688pt x 189.93605pt.
  <RontgenXskrue.PNG, id=357, 609.02531pt x 649.67719pt>
 File: RontgenXskrue.PNG Graphic file (type png)
 
 <use RontgenXskrue.PNG>
-Package pdftex.def Info: RontgenXskrue.PNG used on input line 314.
+Package pdftex.def Info: RontgenXskrue.PNG used on input line 315.
 (pdftex.def)             Requested size: 182.709pt x 194.90465pt.
 
 
@@ -725,26 +725,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <IMG_E1818.jpg, id=368, 2860.6875pt x 3816.2575pt>
 File: IMG_E1818.jpg Graphic file (type jpg)
  <use IMG_E1818.jpg>
-Package pdftex.def Info: IMG_E1818.jpg used on input line 327.
+Package pdftex.def Info: IMG_E1818.jpg used on input line 328.
 (pdftex.def)             Requested size: 143.04276pt x 190.82405pt.
  [9 <./RontgenXskrue.PNG> <./IMG_E1818.jpg>]
 <Pics/ugraf.png, id=380, 562.1pt x 421.575pt>
 File: Pics/ugraf.png Graphic file (type png)
  <use Pics/ugraf.png>
-Package pdftex.def Info: Pics/ugraf.png used on input line 344.
+Package pdftex.def Info: Pics/ugraf.png used on input line 345.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
 [10 <./Pics/ugraf.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 413--414
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
 
@@ -756,30 +756,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Pics/driverConn.pdf Graphic file (type pdf)
 
 <use Pics/driverConn.pdf>
-Package pdftex.def Info: Pics/driverConn.pdf used on input line 425.
+Package pdftex.def Info: Pics/driverConn.pdf used on input line 426.
 (pdftex.def)             Requested size: 489.06812pt x 478.20134pt.
 
-Overfull \hbox (19.59766pt too wide) in paragraph at lines 425--426
+Overfull \hbox (19.59766pt too wide) in paragraph at lines 426--427
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 429--431
+Underfull \hbox (badness 10000) in paragraph at lines 430--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 432--433
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
 
  []
 
 [13 <./Pics/driverConn.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 445--445
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--471
+Underfull \hbox (badness 10000) in paragraph at lines 472--472
 
  []
 
@@ -798,13 +798,13 @@ Kapittel 6.
 ]
 Tillegg A.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 501.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 504.
+(Font)              <5> on input line 502.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 505.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 528.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 529.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ts1lmr.fd
@@ -820,18 +820,18 @@ Tillegg C.
 (./rorboyer-Steinsland_Fiaz.bbl [21
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 620.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 621.
  [22
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 620.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 621.
  (./rorboyer-Steinsland_Fiaz.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 620.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 620.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 621.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 621.
 Package rerunfilecheck Info: File `rorboyer-Steinsland_Fiaz.out' has not change
 d.
 (rerunfilecheck)             Checksum: 7A5131EE2A920E60DD941AB384BCA213;2334.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 620.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 621.
  ) 
 Here is how much of TeX's memory you used:
  9863 strings out of 492995
@@ -860,7 +860,7 @@ xmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/f
 onts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/lm/lmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/
 lmtt8.pfb>
-Output written on rorboyer-Steinsland_Fiaz.pdf (30 pages, 3103890 bytes).
+Output written on rorboyer-Steinsland_Fiaz.pdf (30 pages, 3103900 bytes).
 PDF statistics:
  721 PDF objects out of 1000 (max. 8388607)
  636 compressed objects within 7 object streams
