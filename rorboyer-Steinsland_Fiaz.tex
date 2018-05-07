@@ -275,9 +275,11 @@ $N_1$=Kraften som står vinkelrett på røret\\
 \chapter{Konstruksjon og styring}
 (Her beskrives fremgangsmåten i detalj slik at resultatet kan reproduseres av andre)
 \section{Utstyr}
-Før planleggingen av designet var det hensiktsmessig å gå over lagret, for å få en oversikt over hva som var tilgjengelig og hva som eventuelt måtte kjøpes inn. Vi hadde tilgang på ledeskruer med tilhørende mutter, samt skinner med vogn som sklir lett frem og tilbake. Dette skulle implementeres for å kunne laget et plan som kunne bøye røret i X- og Y-retning, og føre røret fremover. Det resterende som manglet for å kunne konstruere en full rørbøyemaskin måtte tegnes og konstrueres selv, ved hjelp av SolidWorks og SketchUp. 
+Før planleggingen av designet var det hensiktsmessig å gå over lagret, for å få en oversikt over hva som var tilgjengelig og hva som eventuelt måtte kjøpes inn. Vi hadde tilgang på ledeskruer med tilhørende mutter, samt skinner med vogn som sklir lett frem og tilbake. Dette skulle implementeres for å kunne laget et plan som kunne bøye røret i X- og Y-retning, og føre røret fremover. Det resterende som manglet for å kunne konstruere en full rørbøyemaskin måtte tegnes og konstrueres selv, ved hjelp av SolidWorks og SketchUp. 
 
-Programvaren som skal brukes for å styre X-Y-Z-planet er Mach3. Dette er et mye brukt kontrollsystem for CNC-maskiner. Det virker bra i CAD/CAM produksjoner, som med laserkuttere og fres for å nevne noen. 
+
+Programvaren som skal brukes for å styre X-Y-Z-planet er Mach3. Dette er et mye brukt kontrollsystem for CNC-maskiner. Det virker bra i CAD/CAM produksjoner, som med laserkuttere og fres for å nevne noen. 
+
 
 
 \section{Design}
@@ -307,9 +309,11 @@ Det er lagt mye arbeid i at maskinen skal være kompakt, slik at den tar lite pla
 
 
 \section{Materialer}
-Alle materialene som måtte produseres fra bunnen av er tiltenkt å være i stål. Stålplatene er på 10mm med hull som er tilpasset de ferdigproduserte skinnene. Disse passer til en M8 bolt. Skinnene og vognene er av aluminium, så ingen av delen kunne sveises til stålplatene. I figur X ser man en skinne og vogn montert fast i en plate. 
+Alle materialene som måtte produseres fra bunnen av er tiltenkt å være i stål. Stålplatene er på 10mm med hull som er tilpasset de ferdigproduserte skinnene. Disse passer til en M8 bolt. Skinnene og vognene er av aluminium, så ingen av delen kunne sveises til stålplatene. I figur X ser man en skinne og vogn montert fast i en plate. 
 
-Det er brukt lager fra Igus til opplagring av skruer og stussen. Disse er laget i plastikk, og trenger ingen vedlikehold eller smøring \cite{Igus}. Lagrene som er valgt ut for X-og Y-skrue kan tåle opp til 120 MPa \cite{IgusQ2}. Og lageret som er valgt ut til stussen tåler opp til 80MPa \cite{IgusG}
+
+Det er brukt lager fra Igus til opplagring av skruer og stussen. Disse er laget i plastikk, og trenger ingen vedlikehold eller smøring \cite{Igus}. Lagrene som er valgt ut for X-og Y-skrue kan tåle opp til 120 MPa \cite{IgusQ2}. Og lageret som er valgt ut til stussen tåler opp til 80MPa \cite{IgusG}
+
 
 
 \begin{figure}[h!]
@@ -437,12 +441,27 @@ Ifølge kravspesifikasjonen skal røret kunne rotere $\pm45^\circ$. Maksimalt nødv
 \section{Bøyemekanisme}
 \subsection{Sfærisk lager}
 \section{XY-bord}
-Grunnet begrenset tid ble oppgaven redusert til å fokusere på det gruppen har valgt å kalle XY-bordet. Dette bordet er bygd opp av tre plater med skinne, mutter og ledeskrue mellom slik at det sfæriske lageret, hvor røret kommer ut, kan bevege seg fritt i XY-planet. I figur \ref{ymek} og figur \ref{xmek} ser man hvordan skruene er tegnet inn.  Det sfæriske lageret er et kuleformet lager festet med to skiver med lik radius. Platene trenger kun bevege seg +/- 15 mm for å dekke hele området det sfæriske lagrete kan bevege seg. 
+Systemet er basert på samme prinsipp som en fres. XY-bordet fungerer på samme måte som et verktøy som beveger seg i XY-planet. Matingen i Z-aksen tilsvarer Z-bevegelsen til verktøyet, og rotasjonen av røret tilsvarer «spindle-speed». 
+
+
+I det gitte senarioet i figur \ref{FLD} vil den maksimale kraften som utsetter på skruen være 
+
+$N_1-\cos \alpha$. I og med at røret bøyes i Y-retning, i forhold til koordinatsystemet til maskinen, vil skruen i Y-retning ta opp all kraften. Hadde man tatt samme senario, men vridd røret så det bøydes med samme grader i X-retning, ville det vært skruen i X-retning som tok opp kreftene. Man kan da konkludere med at skal man fordele kreftene mellom de to skruene vil det være hensiktsmessig å rotere røret slik at det sto midt i planet mellom X og Y. 
+
+
+Vi fant den maksimale bøyeradien maskinen kan oppnå til å være alpha=0.712 rad. Det betyr at den maksimale kraften hver skrue vil være utsatt for, ved det mest ekstreme tilfelle vil være 
+
+\begin{equation}\label{}
+N_1- \cos\alpha=12 383,072 N - \cos 0,712\nonumber\\
+=8818,667 N
+\end{equation}
+
+
 \begin{figure}[h!]
-	\centering
-	\includegraphics[scale=0.30]{rontgenYskrue.PNG}
-	\caption[Y-mekanisme]{Bildet viser hvordan Y-mekanismen er designet}
-	\label{ymek}
+\centering
+\includegraphics[scale=0.30]{rontgenYskrue.PNG}
+\caption[Y-mekanisme]{Bildet viser hvordan Y-mekanismen er designet}
+\label{ymek}
 \end{figure}
 %denne skal under Design
 
@@ -454,11 +473,18 @@ Grunnet begrenset tid ble oppgaven redusert til å fokusere på det gruppen har va
 \end{figure}
 %Denne skal under Design
 \pagebreak
-Systemet er basert på samme prinsipp som en fres. XY-bordet fungerer på samme måte som et verktøy som beveger seg i XY-planet. Matingen i Z-aksen tilsvarer Z-bevegelsen til verktøyet, og rotasjonen av røret tilsvarer «spindle-speed».\\
 
-\textit{Figur 1: Sammenheng mellom tradisjonell fres og rørbøyer}\\
 
-\textbf{Driver – DCS810}\\
+\subsection{Ledeskinne}
+\subsection{Ledeskrue}
+\subsection{Motorer}
+\section{Motordrivere}
+\section{Mach3-software}
+Systemet er basert på samme prinsipp som en fres. XY-bordet fungerer på samme måte som et verktøy som beveger seg i XY-planet. Matingen i Z-aksen tilsvarer Z-bevegelsen til verktøyet, og rotasjonen av røret tilsvarer «spindle-speed».
+
+\textit{Figur 1: Sammenheng mellom tradisjonell fres og rørbøyer}
+
+\textbf{Driver – DCS810}
 Motorstyringen skal skje ved hjelp av en motor driver av typen DCS810. Dette er en servo-driver som konverterer et lav-spennings kontroll-signal om til høy-spenningssignal som driver motoren. 
 Driveren har 
 Prosjektet er basert på å bruke material og utstyr som er lett tilgjengelig I tråd med dette blir det benyttet en «single-ended» enkoder i motsetning til en differensial enkoder. I tillegg, så er det i utgangspunktet snakk om korte kabellengder.
@@ -466,59 +492,114 @@ Prosjektet er basert på å bruke material og utstyr som er lett tilgjengelig I tr
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=1.8]{Pics/driverConn.pdf}
+	\includegraphics[scale=1.72]{Pics/driverConn.pdf}
 	\caption[Driver]{Tilkoblinger til driveren for x-aksen}
 \end{figure}
 
-\textbf{Kontroller}\\
-Kontrolleren som ble benyttet er en BSMCE04U-PP.  Den bruker USB-tilkobling til PC og vil gjenkjennes av Mach3.\\
- 
-\textit{Figur 3: Koblingsskjema av kontroller til driver}\\
+\textbf{Kontroller}
+Kontrolleren som ble benyttet er en BSMCE04U-PP.  Den bruker USB-tilkobling til PC og vil gjenkjennes av Mach3.
+
+\textit{Figur 3: Koblingsskjema av kontroller til driver}
 
 \textbf{Pulsing}
-For å finne nødvendige antall pulser som Mach3 skal sende, må man vite noe om hele drivsystemet, dvs. motor, enkoder, gir og ledeskrue. Stigningen for gjengene er 5 mm dette gir:
+
+For å finne nødvendige antall pulser som Mach3 skal sende, må man vite noe om hele drivsystemet, dvs. motor, enkoder, gir og ledeskrue.
+
+Utvekslingsforholdet ble målt på to forskjellige måter og ga to forskjellige resultater. Det ble først målt uten enkoder. Det foregikk ved å vri enkoder-akselen til akselen ut av girboksen (last akselen) hadde gått en omdreining. Utvekslings forholdet ble da målt til 32:1. Det ble antatt at enkoder-akselen har samme utvekslingsforhold som ut fra motoren til girboksen. 
+
+Den andre metoden gikk ut på å koble enkoderen til en Arduino som vist i figur [nr]. Se for øvrig kode i tillegg [nr]. Motoren ble koblet til en variabel strømforsyning. 
+
+Figur: Arduino-krets
+
+Deretter ble motoren kjørt flere ganger mens enkoder-verdier ble lest av i Arduino-IDEens seriellmonitor.  
+
+Ardiuno teller hvert step og lagrer dette i variabelen $ encoder0Pos $ for å få dette omgjort til grader brukes følgende linje med kode: 
+
+\begin{lstlisting}
+angle = encoder0Pos * (360.0/2400.0);
+\end{lstlisting}
+
+Dette vil gi verdier som ligger rundt $ 9820 $ for en rotasjon av lastakselen. Siden man fra før hadde funnet utvekslingsforholdet til å være $ 32:1 $. Dette gir antall grader som følger:
+
+\begin{equation}\label{key}
+\theta _{maks}=\frac{\phi}{(u.f.)} = \frac{9820 ^\circ }{32} = 306.9 ^\circ
+\end{equation}
+
+Da dette ikke ga riktig antall grader måtte man finne en et nytt utvekslingsforhold:
+
+\begin{equation}\label{key}
+\ (u.f.)_{ny}=\frac{\phi}{360^\circ } = \frac{9820^\circ }{360^\circ} = 27.28 ^\circ
+\end{equation}
+
+Ny kode blir da:
+\begin{lstlisting}
+angle = (encoder0Pos * (360.0/2400.0))/27.28;
+\end{lstlisting}
+
+Med det nye utvekslingsforholdet funnet til å være 27,28, måles konsistent verdier på$ \approx 360^\circ $ 
+
+Det ble ikke gjort ytterligere forsøk med Arduino for å forbedre nøyaktigheten, da det ble antatt at Mach3 kan gi et annet resultat.
+
+
+Stigningen for gjengene er 5 mm dette gir:
 
 $$
 P = 5 mm
 $$
 Antall skrue omdreininger per millimeter, $rev_{skrue}$: $$\frac{1}{P} = \frac{1}{5} = 0,25 [\frac{rev}{mm}]$$ 
+
 Motoromdreininger per millimeter ($Teoretisk\ \vee\ Kompensert$): $$rev_{skrue} \cdot utvekslingsforhold\ til\ girboks$$
 $$0,25\cdot32 = \underline{8} \qquad\vee\qquad
 0,25\cdot27,3 = \underline{6,825}$$
-Motorpulser per omdreinging: $2400$ \\
-Mach3 steps per millimeter: $$$$ \\ $$2400 \cdot 8 = 19200$$
+
+Motorpulser per omdreinging: $2400$ 
+
+Mach3 steps per millimeter: $$2400 \cdot 8 = 19200$$
+
 Mach3 steps per unit = Mach3 steps per rev x Motor revs per unit
 
 For posisjonsgjenkjenning ble det brukt en kvadraturenkoder. Denne har 600 åpninger i skiven sin, og genererer 4 utpulser per åpning, som gir totalt 2400 utpulser. 
-Andre styringskomponenter
-Nødstoppknapp
-"Hjembryter"
-Grensebrytere for hver akse (+/-)
-Nødstoppknapp skal være med alle CNC-maskiner for rask tilgang til stopp i tilfelle uønsket drift. Hjembryteren brukes for å signalisere til maskinkontrolleren at verktøyet er en ønsket startstilling. I dette tilfellet, når det sfæriske lageret er midtstilt (slik at rør som føres gjennom ikke bøyes.) Grensebryterne brukes til å signalisere til kontrolleren at en akse er ved sin maksimale grense. I dette tilfellet er det når vognen har flyttet seg $\pm15$\ mm. 
 
-Rørbøying – Programvare
-Solidworks
-CAM
-Mach3
+$$
+P = 5 mm
+$$
+Antall skrue omdreininger per millimeter, $rev_{skrue}$: $$\frac{1}{P} = \frac{1}{5} = 0,25 [\frac{rev}{mm}]$$ 
+Motoromdreininger per millimeter ($Teoretisk\ \vee\ Kompensert$):
+
+
+
+
+\begin{equation}\label{girutv}
+rev_{skrue} \cdot utvekslingsforhold\ til\ girboksen\Downarrow\nonumber
+0,25\cdot32=\underline{8} \qquad\vee\qquad
+0,25\cdot27,3=\underline{6,825}
+\end{equation}
+
+Motorpulser per omdreinging: $2400$
+
+Mach3 steps per millimeter: $$$$ \\ $$2400 \cdot 8 = 19200$$
+Mach3 steps per unit = Mach3 steps per rev x Motor revs per unit
+
+Andre styringskomponenter:
+
+\begin{itemize}
+	\item Nødstoppknapp
+	\item "Hjembryter"
+	\item Grensebrytere for hver akse (+/-)
+	\item Manuell puls generator (MPG)
+\end{itemize}
+
+Nødstoppknapp skal være med alle CNC-maskiner for rask tilgang til stopp i tilfelle uønsket drift. Hjembryteren brukes for å signalisere til maskinkontrolleren at verktøyet er en ønsket startstilling. I dette tilfellet, når det sfæriske lageret er midtstilt (slik at rør som føres gjennom ikke bøyes.) Grensebryterne brukes til å signalisere til kontrolleren at en akse er ved sin maksimale grense. I dette tilfellet er det når vognen har flyttet seg $\pm15$\ mm. 
+\subsection{CAD til G-code}
+Flyten  fra en 3D-modell til G-code er vanligvis som følger:
+
+Solidworks $ \rightarrow $ CAM $ \rightarrow $ Mach3
+
 I prinsippet kan en 3D CAD-fil importeres til et CAM-program som generer G-koder. Disse G-kodene kan så lastes inn i Mach3.
 Nødvendig u, for en gitt bøyeradius, R er avhengig av materialet (og rørdiameter?) (Kilde: tubenet) Dersom man bruker u/R forholdet,  9/80 (Kobber, d = 20.0mm, t = 1.0mm) gir dette følgende koordinat: 
 
 
-$$
-P = 5 mm
-$$
-Antall skrue omdreininger per millimeter, $rev_{skrue}$: $$\frac{1}{P} = \frac{1}{5} = 0,25 [\frac{rev}{mm}]$$ 
-Motoromdreininger per millimeter ($Teoretisk\ \vee\ Kompensert$): $$rev_{skrue} \cdot utvekslingsforhold\ til\ girboks$$
-$$0,25\cdot32 = \underline{8} \qquad\vee\qquad
-0,25\cdot27,3 = \underline{6,825}$$
-Motorpulser per omdreinging: $2400$ \\
-Mach3 steps per millimeter: $$$$ \\ $$2400 \cdot 8 = 19200$$
-Mach3 steps per unit = Mach3 steps per rev x Motor revs per unit
-\subsection{Ledeskinne}
-\subsection{Ledeskrue}
-\subsection{Motorer}
-\section{Motordrivere}
-\section{Mach3-software}
+
 
 \chapter{Resultater}
 \section{Analyse}
