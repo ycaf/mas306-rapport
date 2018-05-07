@@ -93,7 +93,7 @@
 
 \chapter*{Takksigelser}
 Morten Ottestad, Morten Kjeld Ebbesen, Tore Saua, Helge Falkum
-		Igus for hjelp med lager og sponsing(?) av dette \\
+		Igus for hjelp med lager og sponsing(?) av dette.
 
 \clearpage
 \chapter*{Abstrakt}
@@ -459,7 +459,7 @@ Grunnet begrenset tid ble oppgaven redusert til å fokusere på det gruppen har va
 \end{figure}
 %Denne skal under Design
 \pagebreak
-Systemet er basert på samme prinsipp som en fres. XY-bordet fungerer på samme måte som et verktøy som beveger seg i XY-planet. Matingen i Z-aksen tilsvarer Z-bevegelsen til verktøyet, og rotasjonen av røret tilsvarer «spindle-speed».\\
+
 
 
 \subsection{Ledeskinne}
@@ -481,6 +481,7 @@ Prosjektet er basert på å bruke material og utstyr som er lett tilgjengelig I tr
 	\centering
 	\includegraphics[scale=1.72]{Pics/driverConn.pdf}
 	\caption[Driver]{Tilkoblinger til driveren for x-aksen}
+	\label{driverconn}
 \end{figure}
 
 \textbf{Kontroller}
@@ -494,27 +495,26 @@ For å finne nødvendige antall pulser som Mach3 skal sende, må man vite noe om he
 
 Utvekslingsforholdet ble målt på to forskjellige måter og ga to forskjellige resultater. Det ble først målt uten enkoder. Det foregikk ved å vri enkoder-akselen til akselen ut av girboksen (last akselen) hadde gått en omdreining. Utvekslings forholdet ble da målt til 32:1. Det ble antatt at enkoder-akselen har samme utvekslingsforhold som ut fra motoren til girboksen. 
 
-Den andre metoden gikk ut på å koble enkoderen til en Arduino som vist i figur [nr]. Se for øvrig kode i tillegg [nr]. Motoren ble koblet til en variabel strømforsyning. 
+Den andre metoden gikk ut på å koble enkoderen til en Arduino. Se for øvrig kode i tillegg \ref{arduinoKode}. Motoren ble koblet til en variabel strømforsyning. 
 
-Figur: Arduino-krets
 
 Deretter ble motoren kjørt flere ganger mens enkoder-verdier ble lest av i Arduino-IDEens seriellmonitor.  
 
-Ardiuno teller hvert step og lagrer dette i variabelen $ encoder0Pos $ for å få dette omgjort til grader brukes følgende linje med kode: 
-
+Arduino teller hvert step og lagrer dette i variabelen $ encoder0Pos $ for å få dette omgjort til grader brukes følgende linje med kode: 
+\bigskip
 \begin{lstlisting}
 angle = encoder0Pos * (360.0/2400.0);
 \end{lstlisting}
 
 Dette vil gi verdier som ligger rundt $ 9820 $ for en rotasjon av lastakselen. Siden man fra før hadde funnet utvekslingsforholdet til å være $ 32:1 $. Dette gir antall grader som følger:
 
-\begin{equation}\label{key}
+\begin{equation}\label{thetamax}
 \theta _{maks}=\frac{\phi}{(u.f.)} = \frac{9820 ^\circ }{32} = 306.9 ^\circ
 \end{equation}
 
 Da dette ikke ga riktig antall grader måtte man finne en et nytt utvekslingsforhold:
 
-\begin{equation}\label{key}
+\begin{equation}\label{girutv}
 \ (u.f.)_{ny}=\frac{\phi}{360^\circ } = \frac{9820^\circ }{360^\circ} = 27.28 ^\circ
 \end{equation}
 
@@ -523,49 +523,34 @@ Ny kode blir da:
 angle = (encoder0Pos * (360.0/2400.0))/27.28;
 \end{lstlisting}
 
-Med det nye utvekslingsforholdet funnet til å være 27,28, måles konsistent verdier på$ \approx 360^\circ $ 
+Med det nye utvekslingsforholdet funnet til å være 27,28, måler verdiene konsistent til $ \theta_{max} \approx 360^\circ $.
 
 Det ble ikke gjort ytterligere forsøk med Arduino for å forbedre nøyaktigheten, da det ble antatt at Mach3 kan gi et annet resultat.
 
 
-Stigningen for gjengene er 5 mm dette gir:
+Stigningen for gjengene, $ P $ er $ 5 mm $. Da blir antall skrue omdreininger per millimeter, $rev_{skrue}$:
+\begin{equation}\label{revskrue}
+rev_{skrue} = \frac{1}{P} = \frac{1}{5} = 0,25 \bigg[ \frac{rev}{mm} \bigg]
+\end{equation}
 
-$$
-P = 5 mm
-$$
-Antall skrue omdreininger per millimeter, $rev_{skrue}$: $$\frac{1}{P} = \frac{1}{5} = 0,25 [\frac{rev}{mm}]$$ 
 
-Motoromdreininger per millimeter ($Teoretisk\ \vee\ Kompensert$): $$rev_{skrue} \cdot utvekslingsforhold\ til\ girboks$$
-$$0,25\cdot32 = \underline{8} \qquad\vee\qquad
-0,25\cdot27,3 = \underline{6,825}$$
+\begin{equation}\label{mrevmm}
+rev_{skrue} \cdot (u.f.)
+0,25\cdot32 = \underline{8} \qquad\vee\qquad
+0,25\cdot27,3 = \underline{6,825}
+\end{equation}
 
-Motorpulser per omdreinging: $2400$ 
 
-Mach3 steps per millimeter: $$2400 \cdot 8 = 19200$$
+Enkoderpulser per omdreinging: $2400$ 
+
+Mach3 steps per millimeter: 
+\begin{equation}\label{mach3steps}
+2400 \cdot 8 = 19200
+\end{equation}
 
 Mach3 steps per unit = Mach3 steps per rev x Motor revs per unit
 
 For posisjonsgjenkjenning ble det brukt en kvadraturenkoder. Denne har 600 åpninger i skiven sin, og genererer 4 utpulser per åpning, som gir totalt 2400 utpulser. 
-
-$$
-P = 5 mm
-$$
-Antall skrue omdreininger per millimeter, $rev_{skrue}$: $$\frac{1}{P} = \frac{1}{5} = 0,25 [\frac{rev}{mm}]$$ 
-Motoromdreininger per millimeter ($Teoretisk\ \vee\ Kompensert$):
-
-
-
-
-\begin{equation}\label{girutv}
-rev_{skrue} \cdot utvekslingsforhold\ til\ girboksen\Downarrow\nonumber
-0,25\cdot32=\underline{8} \qquad\vee\qquad
-0,25\cdot27,3=\underline{6,825}
-\end{equation}
-
-Motorpulser per omdreinging: $2400$
-
-Mach3 steps per millimeter: $$$$ \\ $$2400 \cdot 8 = 19200$$
-Mach3 steps per unit = Mach3 steps per rev x Motor revs per unit
 
 Andre styringskomponenter:
 
@@ -609,6 +594,7 @@ Nødvendig u, for en gitt bøyeradius, R er avhengig av materialet (og rørdiameter
 
 
 \chapter{}
+\label{arduinoKode}
 \begin{lstlisting}
 #define encoder0PinA 2
 #define encoder0PinB 3

@@ -27,16 +27,16 @@
 \contentsline {subsection}{\numberline {3.7.3}Motorer}{15}{subsection.3.7.3}
 \contentsline {section}{\numberline {3.8}Motordrivere}{15}{section.3.8}
 \contentsline {section}{\numberline {3.9}Mach3-software}{15}{section.3.9}
-\contentsline {subsection}{\numberline {3.9.1}CAD til G-code}{18}{subsection.3.9.1}
-\contentsline {chapter}{\numberline {4}Resultater}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Analyse}{19}{section.4.1}
-\contentsline {section}{\numberline {4.2}Testing av r\IeC {\o }r}{19}{section.4.2}
-\contentsline {chapter}{\numberline {5}Diskusjon}{20}{chapter.5}
-\contentsline {section}{\numberline {5.1}Prinsipper, Forhold, Generaliseringer}{20}{section.5.1}
-\contentsline {section}{\numberline {5.2}Presentasjon av analyse, modell eller teori}{20}{section.5.2}
-\contentsline {section}{\numberline {5.3}(Utfordringer)}{20}{section.5.3}
-\contentsline {section}{\numberline {5.4}(Mulige forbedringer)}{20}{section.5.4}
-\contentsline {chapter}{\numberline {6}Konklusjon}{21}{chapter.6}
-\contentsline {chapter}{\numberline {A}}{22}{appendix.A}
-\contentsline {chapter}{\numberline {B}}{24}{appendix.B}
-\contentsline {chapter}{\numberline {C}}{25}{appendix.C}
+\contentsline {subsection}{\numberline {3.9.1}CAD til G-code}{17}{subsection.3.9.1}
+\contentsline {chapter}{\numberline {4}Resultater}{18}{chapter.4}
+\contentsline {section}{\numberline {4.1}Analyse}{18}{section.4.1}
+\contentsline {section}{\numberline {4.2}Testing av r\IeC {\o }r}{18}{section.4.2}
+\contentsline {chapter}{\numberline {5}Diskusjon}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Prinsipper, Forhold, Generaliseringer}{19}{section.5.1}
+\contentsline {section}{\numberline {5.2}Presentasjon av analyse, modell eller teori}{19}{section.5.2}
+\contentsline {section}{\numberline {5.3}(Utfordringer)}{19}{section.5.3}
+\contentsline {section}{\numberline {5.4}(Mulige forbedringer)}{19}{section.5.4}
+\contentsline {chapter}{\numberline {6}Konklusjon}{20}{chapter.6}
+\contentsline {chapter}{\numberline {A}}{21}{appendix.A}
+\contentsline {chapter}{\numberline {B}}{23}{appendix.B}
+\contentsline {chapter}{\numberline {C}}{24}{appendix.C}
