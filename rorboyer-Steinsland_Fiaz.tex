@@ -441,13 +441,27 @@ Ifølge kravspesifikasjonen skal røret kunne rotere $\pm45^\circ$. Maksimalt nødv
 \section{Bøyemekanisme}
 \subsection{Sfærisk lager}
 \section{XY-bord}
+Systemet er basert på samme prinsipp som en fres. XY-bordet fungerer på samme måte som et verktøy som beveger seg i XY-planet. Matingen i Z-aksen tilsvarer Z-bevegelsen til verktøyet, og rotasjonen av røret tilsvarer «spindle-speed». 
 
-Grunnet begrenset tid ble oppgaven redusert til å fokusere på det gruppen har valgt å kalle XY-bordet. Dette bordet er bygd opp av tre plater med skinne, mutter og ledeskrue mellom slik at det sfæriske lageret, hvor røret kommer ut, kan bevege seg fritt i XY-planet. I figur \ref{ymek} og figur \ref{xmek} ser man hvordan skruene er tegnet inn.  Det sfæriske lageret er et kuleformet lager festet med to skiver med lik radius. Platene trenger kun bevege seg +/- 15 mm for å dekke hele området det sfæriske lagrete kan bevege seg. 
+
+I det gitte senarioet i figur \ref{FLD} vil den maksimale kraften som utsetter på skruen være 
+
+$N_1-\cos \alpha$. I og med at røret bøyes i Y-retning, i forhold til koordinatsystemet til maskinen, vil skruen i Y-retning ta opp all kraften. Hadde man tatt samme senario, men vridd røret så det bøydes med samme grader i X-retning, ville det vært skruen i X-retning som tok opp kreftene. Man kan da konkludere med at skal man fordele kreftene mellom de to skruene vil det være hensiktsmessig å rotere røret slik at det sto midt i planet mellom X og Y. 
+
+
+Vi fant den maksimale bøyeradien maskinen kan oppnå til å være alpha=0.712 rad. Det betyr at den maksimale kraften hver skrue vil være utsatt for, ved det mest ekstreme tilfelle vil være 
+
+\begin{equation}\label{}
+N_1- \cos\alpha=12 383,072 N - \cos 0,712\nonumber\\
+=8818,667 N
+\end{equation}
+
+
 \begin{figure}[h!]
-	\centering
-	\includegraphics[scale=0.30]{rontgenYskrue.PNG}
-	\caption[Y-mekanisme]{Bildet viser hvordan Y-mekanismen er designet}
-	\label{ymek}
+\centering
+\includegraphics[scale=0.30]{rontgenYskrue.PNG}
+\caption[Y-mekanisme]{Bildet viser hvordan Y-mekanismen er designet}
+\label{ymek}
 \end{figure}
 %denne skal under Design
 
@@ -459,7 +473,6 @@ Grunnet begrenset tid ble oppgaven redusert til å fokusere på det gruppen har va
 \end{figure}
 %Denne skal under Design
 \pagebreak
-Systemet er basert på samme prinsipp som en fres. XY-bordet fungerer på samme måte som et verktøy som beveger seg i XY-planet. Matingen i Z-aksen tilsvarer Z-bevegelsen til verktøyet, og rotasjonen av røret tilsvarer «spindle-speed».\\
 
 
 \subsection{Ledeskinne}
