@@ -132,13 +132,6 @@ Et annet alternativ er automatisk hydraulisk rørbøyer. Det er denne type teknikk
 
 
 \chapter{Teori}
-<<<<<<< HEAD
-merge pls
-=======
-
-merge pls2
- 
->>>>>>> d9af65b621d16d6d79d7382230bcd9d2a30f8b4f
 
 \section{CNC-styring} 
 Computer Numerical Control er elektroniske maskiner som utfører arbeid etter et forhåndsinnstilt program. CNC-styring er avkommet etter Computer Aided Design og Computer Aided Manufacturing (CAD/CAM) produksjoner \cite{NorskDatakunnskapNetwork}. 
@@ -148,12 +141,6 @@ De første numerisk styrte maskinene ble utviklet i USA på 1950-tallet. Det ble b
 Programformatet for bruk av koding i CNC-styrte maskiner er regulert av den internasjonale standarden ISO 6983/1 og ISO 6983/2. Dette språket består av G- og M-funksjoner. G-funksjonene er forberedende funksjoner som plassering i X,Y,Z-planet, økende/minkende, høyre/venstre, valg av lengde/hastighet og slike ting. M-funksjonene er hjelpende funksjoner som stopp/start, på/av \cite{Niskolen}. 
 \section{Kaldbearbeiding}
 
-Så hvis jeg skriver noe her om kaldebearbeiding, så får du også det?
-<<<<<<< HEAD
-2
-=======
-
->>>>>>> d9af65b621d16d6d79d7382230bcd9d2a30f8b4f
 \section{Gripemekanisme}
 Den mest vanlige metoden for mating av rør i eksisterende CNC-rørbøyemaskiner er å montere en dyttemekanisme i enden av maskinen. Det setter begrensninger til hvilken rørlengde det er mulig å jobbe med. Maskinen som skal konstrueres i denne oppgaven skal, i teorien, kunne ta en uendelig lengde. For å få dette til må det en form for gripemekanisme til. Det er viktig at mekanismen kan fungere godt med runde og glatte overflater. Og at det er høy friksjon mellom gjenstanden som skal ta tak i røret og røret. Balansen mellom å ta tak nok og for mye er veldig fin. Det er hensiktsmessig at mekanismen ikke griper så hardt at det blir skade eller deformasjon på røret. For å få dette til er det mulig å bruke prinsippet til en lift-tong. Den lift-tong vil gripe med en kraft som er proporsjonal med vekten til gjenstanden den skal løfte \cite{N.Sclater}. Dette prinsippet må anvendes på en måte slik at den kan brukes på en horisontal kraft. 
 \section{Belastninger} 
@@ -288,16 +275,25 @@ $N_1$=Kraften som står vinkelrett på røret\\
 \chapter{Konstruksjon og styring}
 (Her beskrives fremgangsmåten i detalj slik at resultatet kan reproduseres av andre)
 \section{Utstyr}
-Det ble disponert skruer, med tilhørende mutter, og skinner med vogn på som skulle brukes for å konstruere maskinen. Resten måtte konstrueres og produseres på egen hånd. 
+Før planleggingen av designet var det hensiktsmessig å gå over lagret, for å få en oversikt over hva som var tilgjengelig og hva som eventuelt måtte kjøpes inn. Vi hadde tilgang på ledeskruer med tilhørende mutter, samt skinner med vogn som sklir lett frem og tilbake. Dette skulle implementeres for å kunne laget et plan som kunne bøye røret i X- og Y-retning, og føre røret fremover. Det resterende som manglet for å kunne konstruere en full rørbøyemaskin måtte tegnes og konstrueres selv, ved hjelp av SolidWorks og SketchUp. 
+
+Programvaren som skal brukes for å styre X-Y-Z-planet er Mach3. Dette er et mye brukt kontrollsystem for CNC-maskiner. Det virker bra i CAD/CAM produksjoner, som med laserkuttere og fres for å nevne noen. 
+
 
 \section{Design}
 Hele prosessen med oppgaven startet med designet. Flere maskiner ble undersøkt for å få inspirasjon til design. Og det ble relativt tidlig laget et utkast av en maskin, som vises i figur X. Men maskinen var installert med dyttemekanisme bak. Så den måtte re-designes. I figur X ser man det neste konseptet som ble designet. I denne designfasen ble den fremste delen av maskinen, den delen som skal bevege seg i X-Y-planet, videreutviklet. Utfordringene kom når midt-delen, med en matemekanisme, skulle tegnes. Denne prosessen er forklart nærmere i de videre kapitlene angående gripemekanismen og rotasjon av rør. 
 
-\begin{figure}
+\begin{figure}[h!]
 \centering
 \includegraphics[scale=0.2]{Pics/prinsippSkisse_1.png}
 \caption[Konsept 1]{Første konseptet}
 \label{forste}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{Pics/Ide2}
+\caption[Konsept 2]{Det andre konseptet}
+\label{andre}
 \end{figure}
 Det er lagt mye arbeid i at maskinen skal være kompakt, slik at den tar lite plass. Den endelig maskinen er designet med i alt tre motorer og en lineær-sylinder. Det er plassert en motor på bakerste del for å styre skruen i Z-retning. Denne jobber sammen med lineær-sylinderen for å rotere røret i spesifikke grader. En motor er festet på undersiden av XY-bordet for å styre skruen i Y-retning og en tredje motor på siden for å styre skruen i X-retning. I figur X er hele konstruksjonen illustrert, hvor røret blir matet i Z-retning mot venstre. 
 
@@ -308,40 +304,43 @@ Det er lagt mye arbeid i at maskinen skal være kompakt, slik at den tar lite pla
 \caption{Full illustrasjon av design}
 \label{ide3}
 \end{figure}
-\pagebreak
 
-Grunnet begrenset tid ble oppgaven redusert til å fokusere på det gruppen har valgt å kalle XY-bordet. Dette bordet er bygd opp av tre plater med skinne, mutter og ledeskrue mellom slik at det sfæriske lageret, hvor røret kommer ut, kan bevege seg fritt i XY-planet. I figur \ref{ymek} og figur \ref{xmek} ser man hvordan skruene er tegnet inn.  Det sfæriske lageret er et kuleformet lager festet med to skiver med lik radius. Platene trenger kun bevege seg +/- 15 mm for å dekke hele området det sfæriske lagrete kan bevege seg. 
 
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.30]{rontgenYskrue.PNG}
-\caption[Y-mekanisme]{Bildet viser hvordan Y-mekanismen er designet}
-\label{ymek}
-\end{figure}
-%denne skal under Design
-
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.30]{RontgenXskrue.PNG}
-\caption[X-mekanisme]{Bilde viser hvordan X-mekanismen er designet}
-\label{xmek}
-\end{figure}
-%Denne skal under Design
-\pagebreak
 \section{Materialer}
-Alt av plater er laget i 10mm stålplater. Disse er tegnet i Solidworks og produsert selv. Skinner og vogn er produsert i aluminium. Disse er tatt ut av en brusmaskin, så de var klare til bruk. I figur \ref{stal} ser man skinne og vogn montert fast i plate som er med på å styre øyet. Skinnen er fastmontert, mens vognen kan gli fritt frem og tilbake.
-Til opplagring av skruer og stuss er det brukt lager fra Igus. Disse er laget i plastikk, og trenger ingen vedlikehold eller smøring \cite{Igus}. Lagrene som er valgt ut for X-og Y-skrue kan tåle opp til 120 MPa \cite{IgusQ2}. Og lageret som er valgt ut til stussen tåler opp til 80MPa \cite{IgusG}
+Alle materialene som måtte produseres fra bunnen av er tiltenkt å være i stål. Stålplatene er på 10mm med hull som er tilpasset de ferdigproduserte skinnene. Disse passer til en M8 bolt. Skinnene og vognene er av aluminium, så ingen av delen kunne sveises til stålplatene. I figur X ser man en skinne og vogn montert fast i en plate. 
 
-\begin{figure}
+Det er brukt lager fra Igus til opplagring av skruer og stussen. Disse er laget i plastikk, og trenger ingen vedlikehold eller smøring \cite{Igus}. Lagrene som er valgt ut for X-og Y-skrue kan tåle opp til 120 MPa \cite{IgusQ2}. Og lageret som er valgt ut til stussen tåler opp til 80MPa \cite{IgusG}
+
+
+\begin{figure}[h!]
 \centering
 \graphicspath{{Pics}}
 \includegraphics[scale=0.05]{IMG_E1818.jpg}
 \caption[Skinner]{Her er skinene og vognen montert på en av stålplatene som skal styre øyet}
 \label{stal}
 \end{figure}
-
+\pagebreak
 \section{Mating av rør}
 Prosessen med å finne en mekanisme for å mate røret i Z-retning var den mest krevende. En av de første ideene var en lift-tong festet til en ledeskrue, med to halvmåner som tar tak i røret. Ideen var at halvmånene skulle klemme til når skruen gikk i positiv retning, og løse opp når den skulle gå i negativ retning for å hente mer rør. Problemet med denne løsningen er at den bare tar tak i nedre del av halvmånen. Når dette skal rotere vil det skape et uønsket moment. Dette ble løst ved å montere på en til klype på toppen av halvmånene, og laget et slags hus. Men ved nærmere ettertanke ble det avklart at det ble for avansert å produsere. Det var det nåværende gripehuset ble konstruert. Det er større og mer robust, og skal fungere på samme måte med at det griper til i positiv retning og slipper opp i negativ retning. Dette kan enklere produseres da det er brukt forskjellige typer standardiserte stålkomponenter. I motsetning til de første to ideene hvor lift-tongen måtte vært skjært ut i ulike former. 
+\begin{figure}
+\centering
+\includegraphics[scale=0.3]{Pics/GripeKonsept.PNG}
+\caption[Gripemekanisme 1]{Den første ideen til gripemekanisme}
+\label{grip1}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[scale=0.3]{Pics/gripeHusConcept.PNG}
+\caption[Gripemekanisme 2]{Den andre ideen til gripemekanisme}
+\label{grip2}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{Pics/Gripemekanisme.png}
+\caption[Gripemekanisme 3]{Den endelige gripemekanismen}
+\label{grip3}
+\end{figure}
+\pagebreak
 \subsection{Gripehus}
 I fra figur \ref{FLD} ser man at det kommer en kraft $P_L$ på røret. Det er denne kraften som trengs for å kunne føre og bøyet røret. For å finne denne, må ligning \ref{u} - \ref{dyttekraft} anvendes. Hvis man tar utgangspunktet i at det skal bøyes et rør med flytegrenser $\sigma_y = 195MPa$ og E-modul $E=210 GPa$. Et rør med tykkelse $t=2,65mm$ gir en ytre radius $R_1= 16,85mm$ og indre radius $R_2=14,2mm$. $u$ er den maksimale skyvningen skinnene kan ha i X- og Y-retning før det sfæriske lageret går ut av posisjon. Og den er funnet til å være $u=15mm$. $V$ er avstanden fra stussen til senter av det sfæriske lageret. Ut i fra konstroksjonen kan man lese av at denne er $V=40.33mm$. 
 
@@ -349,6 +348,8 @@ I fra figur \ref{FLD} ser man at det kommer en kraft $P_L$ på røret. Det er denn
 \begin{equation}\label{alphanew}
 u=\frac{V}{sin\alpha}\cdot(1-cos\alpha)
 \end{equation}
+
+Ut i fra figur \ref{graf} kan man se av $\alpha$ = 0,712 rad
 
 \begin{figure}[h!]
 \centering
@@ -417,10 +418,42 @@ P_L&=&N_1\cdot\cos(\frac{\pi}{2}-\alpha)\nonumber\\
 \subsection{Opplagring}
 \section{Rotasjon av rør}
 Ifølge kravspesifikasjonen skal røret kunne rotere $\pm45^\circ$. Maksimalt nødvendig moment for å kunne rotere røret oppstår når røret roteres mot bøyeretningen. Det vil være avhengig av friksjonen pga. $P_{u}$ og smøring i det sfæriske lageret. 
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{Pics/sylinder2}
+\caption[Sylinder 1]{Første ide til hvordan rotere røret}
+\label{syl1}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{Pics/Sylinderny.png}
+\caption[Sylinder 2]{Hvordan rotasjonsmekanismen ble seende ut til slutt}
+\label{syl2}
+\end{figure}
+
 \subsection{Elektrisk sylinder}
 \section{Bøyemekanisme}
 \subsection{Sfærisk lager}
 \section{XY-bord}
+Grunnet begrenset tid ble oppgaven redusert til å fokusere på det gruppen har valgt å kalle XY-bordet. Dette bordet er bygd opp av tre plater med skinne, mutter og ledeskrue mellom slik at det sfæriske lageret, hvor røret kommer ut, kan bevege seg fritt i XY-planet. I figur \ref{ymek} og figur \ref{xmek} ser man hvordan skruene er tegnet inn.  Det sfæriske lageret er et kuleformet lager festet med to skiver med lik radius. Platene trenger kun bevege seg +/- 15 mm for å dekke hele området det sfæriske lagrete kan bevege seg. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.30]{rontgenYskrue.PNG}
+	\caption[Y-mekanisme]{Bildet viser hvordan Y-mekanismen er designet}
+	\label{ymek}
+\end{figure}
+%denne skal under Design
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.30]{RontgenXskrue.PNG}
+	\caption[X-mekanisme]{Bilde viser hvordan X-mekanismen er designet}
+	\label{xmek}
+\end{figure}
+%Denne skal under Design
+\pagebreak
 Systemet er basert på samme prinsipp som en fres. XY-bordet fungerer på samme måte som et verktøy som beveger seg i XY-planet. Matingen i Z-aksen tilsvarer Z-bevegelsen til verktøyet, og rotasjonen av røret tilsvarer «spindle-speed».\\
 
 \textit{Figur 1: Sammenheng mellom tradisjonell fres og rørbøyer}\\
