@@ -133,8 +133,6 @@ Et annet alternativ er automatisk hydraulisk rørbøyer. Det er denne type teknikk
 
 \chapter{Teori}
 
-merge pls2
- 
 
 \section{CNC-styring} 
 Computer Numerical Control er elektroniske maskiner som utfører arbeid etter et forhåndsinnstilt program. CNC-styring er avkommet etter Computer Aided Design og Computer Aided Manufacturing (CAD/CAM) produksjoner \cite{NorskDatakunnskapNetwork}. 
@@ -143,8 +141,6 @@ De første numerisk styrte maskinene ble utviklet i USA på 1950-tallet. Det ble b
 
 Programformatet for bruk av koding i CNC-styrte maskiner er regulert av den internasjonale standarden ISO 6983/1 og ISO 6983/2. Dette språket består av G- og M-funksjoner. G-funksjonene er forberedende funksjoner som plassering i X,Y,Z-planet, økende/minkende, høyre/venstre, valg av lengde/hastighet og slike ting. M-funksjonene er hjelpende funksjoner som stopp/start, på/av \cite{Niskolen}. 
 \section{Kaldbearbeiding}
-
-Så hvis jeg skriver noe her om kaldebearbeiding, så får du også det?
 
 \section{Gripemekanisme}
 Den mest vanlige metoden for mating av rør i eksisterende CNC-rørbøyemaskiner er å montere en dyttemekanisme i enden av maskinen. Det setter begrensninger til hvilken rørlengde det er mulig å jobbe med. Maskinen som skal konstrueres i denne oppgaven skal, i teorien, kunne ta en uendelig lengde. For å få dette til må det en form for gripemekanisme til. Det er viktig at mekanismen kan fungere godt med runde og glatte overflater. Og at det er høy friksjon mellom gjenstanden som skal ta tak i røret og røret. Balansen mellom å ta tak nok og for mye er veldig fin. Det er hensiktsmessig at mekanismen ikke griper så hardt at det blir skade eller deformasjon på røret. For å få dette til er det mulig å bruke prinsippet til en lift-tong. Den lift-tong vil gripe med en kraft som er proporsjonal med vekten til gjenstanden den skal løfte \cite{N.Sclater}. Dette prinsippet må anvendes på en måte slik at den kan brukes på en horisontal kraft. 
@@ -413,11 +409,17 @@ Ifølge kravspesifikasjonen skal røret kunne rotere $\pm45^\circ$. Maksimalt nødv
 \section{Bøyemekanisme}
 \subsection{Sfærisk lager}
 \section{XY-bord}
-Systemet er basert på samme prinsipp som en fres. XY-bordet fungerer på samme måte som et verktøy som beveger seg i XY-planet. Matingen i Z-aksen tilsvarer Z-bevegelsen til verktøyet, og rotasjonen av røret tilsvarer «spindle-speed».\\
 
-\textit{Figur 1: Sammenheng mellom tradisjonell fres og rørbøyer}\\
+\subsection{Ledeskinne}
+\subsection{Ledeskrue}
+\subsection{Motorer}
+\section{Motordrivere}
+\section{Mach3-software}
+Systemet er basert på samme prinsipp som en fres. XY-bordet fungerer på samme måte som et verktøy som beveger seg i XY-planet. Matingen i Z-aksen tilsvarer Z-bevegelsen til verktøyet, og rotasjonen av røret tilsvarer «spindle-speed».
 
-\textbf{Driver – DCS810}\\
+\textit{Figur 1: Sammenheng mellom tradisjonell fres og rørbøyer}
+
+\textbf{Driver – DCS810}
 Motorstyringen skal skje ved hjelp av en motor driver av typen DCS810. Dette er en servo-driver som konverterer et lav-spennings kontroll-signal om til høy-spenningssignal som driver motoren. 
 Driveren har 
 Prosjektet er basert på å bruke material og utstyr som er lett tilgjengelig I tråd med dette blir det benyttet en «single-ended» enkoder i motsetning til en differensial enkoder. I tillegg, så er det i utgangspunktet snakk om korte kabellengder.
@@ -425,14 +427,14 @@ Prosjektet er basert på å bruke material og utstyr som er lett tilgjengelig I tr
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=1.8]{Pics/driverConn.pdf}
+	\includegraphics[scale=1.72]{Pics/driverConn.pdf}
 	\caption[Driver]{Tilkoblinger til driveren for x-aksen}
 \end{figure}
 
-\textbf{Kontroller}\\
-Kontrolleren som ble benyttet er en BSMCE04U-PP.  Den bruker USB-tilkobling til PC og vil gjenkjennes av Mach3.\\
- 
-\textit{Figur 3: Koblingsskjema av kontroller til driver}\\
+\textbf{Kontroller}
+Kontrolleren som ble benyttet er en BSMCE04U-PP.  Den bruker USB-tilkobling til PC og vil gjenkjennes av Mach3.
+
+\textit{Figur 3: Koblingsskjema av kontroller til driver}
 
 \textbf{Pulsing}
 For å finne nødvendige antall pulser som Mach3 skal sende, må man vite noe om hele drivsystemet, dvs. motor, enkoder, gir og ledeskrue. Stigningen for gjengene er 5 mm dette gir:
@@ -441,43 +443,59 @@ $$
 P = 5 mm
 $$
 Antall skrue omdreininger per millimeter, $rev_{skrue}$: $$\frac{1}{P} = \frac{1}{5} = 0,25 [\frac{rev}{mm}]$$ 
+
 Motoromdreininger per millimeter ($Teoretisk\ \vee\ Kompensert$): $$rev_{skrue} \cdot utvekslingsforhold\ til\ girboks$$
 $$0,25\cdot32 = \underline{8} \qquad\vee\qquad
 0,25\cdot27,3 = \underline{6,825}$$
-Motorpulser per omdreinging: $2400$ \\
-Mach3 steps per millimeter: $$$$ \\ $$2400 \cdot 8 = 19200$$
+
+Motorpulser per omdreinging: $2400$ 
+
+Mach3 steps per millimeter: $$2400 \cdot 8 = 19200$$
+
 Mach3 steps per unit = Mach3 steps per rev x Motor revs per unit
 
 For posisjonsgjenkjenning ble det brukt en kvadraturenkoder. Denne har 600 åpninger i skiven sin, og genererer 4 utpulser per åpning, som gir totalt 2400 utpulser. 
-Andre styringskomponenter
-Nødstoppknapp
-"Hjembryter"
-Grensebrytere for hver akse (+/-)
-Nødstoppknapp skal være med alle CNC-maskiner for rask tilgang til stopp i tilfelle uønsket drift. Hjembryteren brukes for å signalisere til maskinkontrolleren at verktøyet er en ønsket startstilling. I dette tilfellet, når det sfæriske lageret er midtstilt (slik at rør som føres gjennom ikke bøyes.) Grensebryterne brukes til å signalisere til kontrolleren at en akse er ved sin maksimale grense. I dette tilfellet er det når vognen har flyttet seg $\pm15$\ mm. 
-
-Rørbøying – Programvare
-Solidworks
-CAM
-Mach3
-I prinsippet kan en 3D CAD-fil importeres til et CAM-program som generer G-koder. Disse G-kodene kan så lastes inn i Mach3.
-Nødvendig u, for en gitt bøyeradius, R er avhengig av materialet (og rørdiameter?) (Kilde: tubenet) Dersom man bruker u/R forholdet,  9/80 (Kobber, d = 20.0mm, t = 1.0mm) gir dette følgende koordinat: 
-
 
 $$
 P = 5 mm
 $$
 Antall skrue omdreininger per millimeter, $rev_{skrue}$: $$\frac{1}{P} = \frac{1}{5} = 0,25 [\frac{rev}{mm}]$$ 
-Motoromdreininger per millimeter ($Teoretisk\ \vee\ Kompensert$): $$rev_{skrue} \cdot utvekslingsforhold\ til\ girboks$$
-$$0,25\cdot32 = \underline{8} \qquad\vee\qquad
-0,25\cdot27,3 = \underline{6,825}$$
-Motorpulser per omdreinging: $2400$ \\
+Motoromdreininger per millimeter ($Teoretisk\ \vee\ Kompensert$):
+
+
+
+
+\begin{equation}\label{girutv}
+rev_{skrue} \cdot utvekslingsforhold\ til\ girboksen\Downarrow\nonumber
+0,25\cdot32=\underline{8} \qquad\vee\qquad
+0,25\cdot27,3=\underline{6,825}
+\end{equation}
+
+Motorpulser per omdreinging: $2400$
+
 Mach3 steps per millimeter: $$$$ \\ $$2400 \cdot 8 = 19200$$
 Mach3 steps per unit = Mach3 steps per rev x Motor revs per unit
-\subsection{Ledeskinne}
-\subsection{Ledeskrue}
-\subsection{Motorer}
-\section{Motordrivere}
-\section{Mach3-software}
+
+Andre styringskomponenter:
+
+\begin{itemize}
+	\item Nødstoppknapp
+	\item "Hjembryter"
+	\item Grensebrytere for hver akse (+/-)
+	\item Manuell puls generator (MPG)
+\end{itemize}
+
+Nødstoppknapp skal være med alle CNC-maskiner for rask tilgang til stopp i tilfelle uønsket drift. Hjembryteren brukes for å signalisere til maskinkontrolleren at verktøyet er en ønsket startstilling. I dette tilfellet, når det sfæriske lageret er midtstilt (slik at rør som føres gjennom ikke bøyes.) Grensebryterne brukes til å signalisere til kontrolleren at en akse er ved sin maksimale grense. I dette tilfellet er det når vognen har flyttet seg $\pm15$\ mm. 
+\subsection{CAD til G-code}
+Flyten  fra en 3D-modell til G-code er vanligvis som følger:
+
+Solidworks $ \rightarrow $ CAM $ \rightarrow $ Mach3
+
+I prinsippet kan en 3D CAD-fil importeres til et CAM-program som generer G-koder. Disse G-kodene kan så lastes inn i Mach3.
+Nødvendig u, for en gitt bøyeradius, R er avhengig av materialet (og rørdiameter?) (Kilde: tubenet) Dersom man bruker u/R forholdet,  9/80 (Kobber, d = 20.0mm, t = 1.0mm) gir dette følgende koordinat: 
+
+
+
 
 \chapter{Resultater}
 \section{Analyse}

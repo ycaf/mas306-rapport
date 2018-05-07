@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.11)  6 MAY 2018 18:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.11)  7 MAY 2018 13:44
 entering extended mode
 **./rorboyer-Steinsland_Fiaz.tex
 (rorboyer-Steinsland_Fiaz.tex
@@ -460,7 +460,11 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 85.
 
-(rorboyer-Steinsland_Fiaz.aux)
+(rorboyer-Steinsland_Fiaz.aux
+
+LaTeX Warning: Label `key' multiply defined.
+
+)
 \openout1 = `rorboyer-Steinsland_Fiaz.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
@@ -479,8 +483,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 88.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 88.
@@ -537,7 +540,7 @@ G,.JBIG2,.JB2,.eps]
 )
 \c@lstlisting=\count127
  (titlepage.tex
-<Pics/uia-logo.pdf, id=163, pagebox=cropbox, 193.09239pt x 28.46333pt>
+<Pics/uia-logo.pdf, id=167, pagebox=cropbox, 193.09239pt x 28.46333pt>
 File: Pics/uia-logo.pdf Graphic file (type pdf)
 <use Pics/uia-logo.pdf>
 Package pdftex.def Info: Pics/uia-logo.pdf  used on input line 9. on input line
@@ -638,77 +641,80 @@ Kapittel 1.
 
 ]
 Kapittel 2.
+<Pics/krefterror.png, id=289, 575.14874pt x 386.44376pt>
+File: Pics/krefterror.png Graphic file (type png)
+<use Pics/krefterror.png>
+Package pdftex.def Info: Pics/krefterror.png  used on input line 152. on input 
+line 152.
+Package pdftex.def Info: Requested size: 287.57367pt x 193.2214pt on input line
+ 152.
 [2
 
 ]
-<Pics/krefterror.png, id=291, 575.14874pt x 386.44376pt>
-File: Pics/krefterror.png Graphic file (type png)
-<use Pics/krefterror.png>
-Package pdftex.def Info: Pics/krefterror.png  used on input line 156. on input 
-line 156.
-Package pdftex.def Info: Requested size: 287.57367pt x 193.2214pt on input line
- 156.
+Underfull \hbox (badness 10000) in paragraph at lines 162--168
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--172
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--200
 
  []
 
 [3 <./Pics/krefterror.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 197--204
-
- []
-
-<Pics/plastisk.png, id=313, 592.2125pt x 489.83pt>
+<Pics/plastisk.png, id=319, 592.2125pt x 489.83pt>
 File: Pics/plastisk.png Graphic file (type png)
 <use Pics/plastisk.png>
-Package pdftex.def Info: Pics/plastisk.png  used on input line 208. on input li
-ne 208.
+Package pdftex.def Info: Pics/plastisk.png  used on input line 204. on input li
+ne 204.
 Package pdftex.def Info: Requested size: 296.10551pt x 244.9144pt on input line
- 208.
+ 204.
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--236
+Underfull \hbox (badness 10000) in paragraph at lines 223--232
 
  []
 
 [4 <./Pics/plastisk.png>]
-<Pics/elastisk.png, id=330, 576.1525pt x 500.87125pt>
+<Pics/elastisk.png, id=335, 576.1525pt x 500.87125pt>
 File: Pics/elastisk.png Graphic file (type png)
 <use Pics/elastisk.png>
-Package pdftex.def Info: Pics/elastisk.png  used on input line 241. on input li
-ne 241.
+Package pdftex.def Info: Pics/elastisk.png  used on input line 237. on input li
+ne 237.
 Package pdftex.def Info: Requested size: 288.07553pt x 250.435pt on input line 
-241.
+237.
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--260
-
- []
-
-[5 <./Pics/elastisk.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 267--270
+Underfull \hbox (badness 10000) in paragraph at lines 247--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--279
+Underfull \vbox (badness 2005) has occurred while \output is active []
+
+ [5 <./Pics/elastisk.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 263--266
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--275
 
  []
 
 [6]
 Kapittel 3.
-<Pics/prinsippSkisse_1.png, id=344, 968.11688pt x 718.18312pt>
+<Pics/prinsippSkisse_1.png, id=349, 968.11688pt x 718.18312pt>
 File: Pics/prinsippSkisse_1.png Graphic file (type png)
 <use Pics/prinsippSkisse_1.png>
-Package pdftex.def Info: Pics/prinsippSkisse_1.png  used on input line 290. on 
-input line 290.
+Package pdftex.def Info: Pics/prinsippSkisse_1.png  used on input line 286. on 
+input line 286.
 Package pdftex.def Info: Requested size: 193.61993pt x 143.63408pt on input lin
-e 290.
-<BildeZY.PNG, id=345, 802.49812pt x 535.2497pt>
+e 286.
+<BildeZY.PNG, id=350, 802.49812pt x 535.2497pt>
 File: BildeZY.PNG Graphic file (type png)
 <use BildeZY.PNG>
-Package pdftex.def Info: BildeZY.PNG  used on input line 299. on input line 299
+Package pdftex.def Info: BildeZY.PNG  used on input line 295. on input line 295
 .
 Package pdftex.def Info: Requested size: 240.75128pt x 160.57614pt on input lin
-e 299.
+e 295.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -718,20 +724,20 @@ Underfull \vbox (badness 2698) has occurred while \output is active []
  [7
 
  <./Pics/prinsippSkisse_1.png>]
-<rontgenYskrue.PNG, id=353, 580.41844pt x 633.11531pt>
+<rontgenYskrue.PNG, id=358, 580.41844pt x 633.11531pt>
 File: rontgenYskrue.PNG Graphic file (type png)
 <use rontgenYskrue.PNG>
-Package pdftex.def Info: rontgenYskrue.PNG  used on input line 309. on input li
-ne 309.
+Package pdftex.def Info: rontgenYskrue.PNG  used on input line 305. on input li
+ne 305.
 Package pdftex.def Info: Requested size: 174.12688pt x 189.93605pt on input lin
-e 309.
-<RontgenXskrue.PNG, id=354, 609.02531pt x 649.67719pt>
+e 305.
+<RontgenXskrue.PNG, id=359, 609.02531pt x 649.67719pt>
 File: RontgenXskrue.PNG Graphic file (type png)
 <use RontgenXskrue.PNG>
-Package pdftex.def Info: RontgenXskrue.PNG  used on input line 317. on input li
-ne 317.
+Package pdftex.def Info: RontgenXskrue.PNG  used on input line 313. on input li
+ne 313.
 Package pdftex.def Info: Requested size: 182.709pt x 194.90465pt on input line 
-317.
+313.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -740,73 +746,48 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 <./BildeZY.PNG> <./rontgenYskrue.PNG>]
-<IMG_E1818.jpg, id=365, 2860.6875pt x 3816.2575pt>
+<IMG_E1818.jpg, id=370, 2860.6875pt x 3816.2575pt>
 File: IMG_E1818.jpg Graphic file (type jpg)
 <use IMG_E1818.jpg>
-Package pdftex.def Info: IMG_E1818.jpg  used on input line 330. on input line 3
-30.
+Package pdftex.def Info: IMG_E1818.jpg  used on input line 326. on input line 3
+26.
 Package pdftex.def Info: Requested size: 143.04276pt x 190.82405pt on input lin
-e 330.
+e 326.
  [9 <./RontgenXskrue.PNG> <./IMG_E1818.jpg>]
-<Pics/ugraf.png, id=377, 562.1pt x 421.575pt>
+<Pics/ugraf.png, id=382, 562.1pt x 421.575pt>
 File: Pics/ugraf.png Graphic file (type png)
 <use Pics/ugraf.png>
-Package pdftex.def Info: Pics/ugraf.png  used on input line 347. on input line 
-347.
+Package pdftex.def Info: Pics/ugraf.png  used on input line 343. on input line 
+343.
 Package pdftex.def Info: Requested size: 281.04932pt x 210.78697pt on input lin
-e 347.
+e 343.
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
-
- []
-
-[10 <./Pics/ugraf.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 418--419
-
- []
-
-
+[10 <./Pics/ugraf.png (PNG copy)>] [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-<Pics/driverConn.pdf, id=402, pagebox=cropbox, 271.70473pt x 265.66762pt>
+<Pics/driverConn.pdf, id=407, pagebox=cropbox, 271.70473pt x 265.66762pt>
 File: Pics/driverConn.pdf Graphic file (type pdf)
 <use Pics/driverConn.pdf>
-Package pdftex.def Info: Pics/driverConn.pdf  used on input line 428. on input 
-line 428.
-Package pdftex.def Info: Requested size: 489.06812pt x 478.20134pt on input lin
-e 428.
-
-Overfull \hbox (19.59766pt too wide) in paragraph at lines 428--429
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 432--434
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 435--436
-
- []
+Package pdftex.def Info: Pics/driverConn.pdf  used on input line 430. on input 
+line 430.
+Package pdftex.def Info: Requested size: 467.3313pt x 456.9475pt on input line 
+430.
 
 [13 <./Pics/driverConn.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 448--448
+Underfull \hbox (badness 10000) in paragraph at lines 476--476
 
  []
 
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 482.
 
-Underfull \hbox (badness 10000) in paragraph at lines 474--474
-
- []
-
-[14]
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [14]
 Kapittel 4.
 [15
 
@@ -821,17 +802,11 @@ Kapittel 6.
 ]
 Tillegg A.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 504.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 507.
+(Font)              <5> on input line 522.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 525.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 531.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [18
 
 ] [19]
@@ -843,24 +818,28 @@ Tillegg C.
 (rorboyer-Steinsland_Fiaz.bbl [21
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 623.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 641.
  [22
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 623.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 641.
  (rorboyer-Steinsland_Fiaz.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 623.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 623.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 641.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 641.
 Package rerunfilecheck Info: File `rorboyer-Steinsland_Fiaz.out' has not change
 d.
-(rerunfilecheck)             Checksum: 491462CD4BC968076BAAAE835B2AD30D;2374.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 623.
+(rerunfilecheck)             Checksum: BE8472BBF5760F3D564F3AAD2EA92560;2443.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 641.
  ) 
 Here is how much of TeX's memory you used:
- 9857 strings out of 493312
- 139398 string characters out of 3138902
+ 9864 strings out of 493312
+ 139490 string characters out of 3138902
  437522 words of memory out of 3000000
- 12995 multiletter control sequences out of 15000+200000
+ 13000 multiletter control sequences out of 15000+200000
  68409 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,11n,58p,1052b,1939s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -881,9 +860,9 @@ nts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
 rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/lm/lmtt8.pfb>
-Output written on rorboyer-Steinsland_Fiaz.pdf (30 pages, 3172380 bytes).
+Output written on rorboyer-Steinsland_Fiaz.pdf (30 pages, 3173946 bytes).
 PDF statistics:
- 713 PDF objects out of 1000 (max. 8388607)
- 225 named destinations out of 1000 (max. 500000)
- 376 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 719 PDF objects out of 1000 (max. 8388607)
+ 227 named destinations out of 1000 (max. 500000)
+ 384 words of extra memory for PDF output out of 10000 (max. 10000000)
 

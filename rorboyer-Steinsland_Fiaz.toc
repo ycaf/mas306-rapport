@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {2.1}CNC-styring}{2}{section.2.1}
 \contentsline {section}{\numberline {2.2}Kaldbearbeiding}{2}{section.2.2}
 \contentsline {section}{\numberline {2.3}Gripemekanisme}{2}{section.2.3}
-\contentsline {section}{\numberline {2.4}Belastninger}{3}{section.2.4}
+\contentsline {section}{\numberline {2.4}Belastninger}{2}{section.2.4}
 \contentsline {chapter}{\numberline {3}Konstruksjon og styring}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Utstyr}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Design}{7}{section.3.2}
@@ -22,11 +22,12 @@
 \contentsline {section}{\numberline {3.6}B\IeC {\o }yemekanisme}{12}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Sf\IeC {\ae }risk lager}{12}{subsection.3.6.1}
 \contentsline {section}{\numberline {3.7}XY-bord}{12}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Ledeskinne}{14}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Ledeskrue}{14}{subsection.3.7.2}
-\contentsline {subsection}{\numberline {3.7.3}Motorer}{14}{subsection.3.7.3}
-\contentsline {section}{\numberline {3.8}Motordrivere}{14}{section.3.8}
-\contentsline {section}{\numberline {3.9}Mach3-software}{14}{section.3.9}
+\contentsline {subsection}{\numberline {3.7.1}Ledeskinne}{12}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Ledeskrue}{12}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}Motorer}{12}{subsection.3.7.3}
+\contentsline {section}{\numberline {3.8}Motordrivere}{12}{section.3.8}
+\contentsline {section}{\numberline {3.9}Mach3-software}{12}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}CAD til G-code}{14}{subsection.3.9.1}
 \contentsline {chapter}{\numberline {4}Resultater}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Analyse}{15}{section.4.1}
 \contentsline {section}{\numberline {4.2}Testing av r\IeC {\o }r}{15}{section.4.2}
