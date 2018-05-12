@@ -92,8 +92,7 @@
 \clearpage
 
 \chapter*{Takksigelser}
-Morten Ottestad, Morten Kjeld Ebbesen, Tore Saua, Helge Falkum
-		Igus for hjelp med lager og sponsing(?) av dette \\
+Vi vil gjerne rette en stor takk til Morten Ottestad for veiledning og gode tips på veien, og Morten Kjeld Ebbesen for hjelp med mekanikken bak det hele. Vi vil også takke to av våre medelever, Tore Saua og Helge Andreas Falkum, for god hjelp med utforming av designet og den praktiske delen med bygging. 
 
 \clearpage
 \chapter*{Abstrakt}
@@ -283,7 +282,7 @@ Programvaren som skal brukes for å styre X-Y-Z-planet er Mach3. Dette er et mye 
 
 
 \section{Design}
-Hele prosessen med oppgaven startet med designet. Flere maskiner ble undersøkt for å få inspirasjon til design. Og det ble relativt tidlig laget et utkast av en maskin, som vises i figur X. Men maskinen var installert med dyttemekanisme bak. Så den måtte re-designes. I figur X ser man det neste konseptet som ble designet. I denne designfasen ble den fremste delen av maskinen, den delen som skal bevege seg i X-Y-planet, videreutviklet. Utfordringene kom når midt-delen, med en matemekanisme, skulle tegnes. Denne prosessen er forklart nærmere i de videre kapitlene angående gripemekanismen og rotasjon av rør. 
+Hele prosessen med oppgaven startet med designet. Flere maskiner ble undersøkt for å få inspirasjon til design. Og det ble relativt tidlig laget et utkast av en maskin, som vises i figur \ref{forste}. Den er installert med to motorer for å styre den delen som skal bevege seg i X- og Y-retning. Det er også en motor i bakenden, for å dytte røret fremover. Men den mekanismen måtte re-designes da maskinen skulle ha gripemekanisme for å kunne ta uendelig lange rør. I figur \ref{andre} ser man det neste konseptet som ble designet. I denne designfasen ble den fremste delen av maskinen, den delen som skal bevege seg i X-Y-planet, videreutviklet.  Utfordringene kom når midt-delen, med en matemekanisme, skulle tegnes. Her er den med den første ideen til en gripemekanisme, men denne prosessen er forklart nærmere i de videre kapitlene angående gripemekanismen og rotasjon av rør.
 
 \begin{figure}[h!]
 \centering
@@ -297,7 +296,7 @@ Hele prosessen med oppgaven startet med designet. Flere maskiner ble undersøkt f
 \caption[Konsept 2]{Det andre konseptet}
 \label{andre}
 \end{figure}
-Det er lagt mye arbeid i at maskinen skal være kompakt, slik at den tar lite plass. Den endelig maskinen er designet med i alt tre motorer og en lineær-sylinder. Det er plassert en motor på bakerste del for å styre skruen i Z-retning. Denne jobber sammen med lineær-sylinderen for å rotere røret i spesifikke grader. En motor er festet på undersiden av XY-bordet for å styre skruen i Y-retning og en tredje motor på siden for å styre skruen i X-retning. I figur X er hele konstruksjonen illustrert, hvor røret blir matet i Z-retning mot venstre. 
+Det er lagt mye arbeid i at maskinen skal være kompakt, slik at den tar lite plass. Den endelig maskinen er designet med i alt tre motorer og en lineær-sylinder. Det er plassert en motor på bakerste del for å styre skruen i Z-retning. Denne jobber sammen med lineær-sylinderen for å rotere røret i spesifikke grader. En motor er festet på undersiden av XY-bordet for å styre skruen i Y-retning og en tredje motor på siden for å styre skruen i X-retning. I figur \ref{ide3} er hele konstruksjonen illustrert, hvor røret blir matet i Z-retning mot venstre. 
 
 
 \begin{figure}[h]
@@ -325,7 +324,7 @@ Det er brukt lager fra Igus til opplagring av skruer og stussen. Disse er laget 
 \end{figure}
 \pagebreak
 \section{Mating av rør}
-Prosessen med å finne en mekanisme for å mate røret i Z-retning var den mest krevende. En av de første ideene var en lift-tong festet til en ledeskrue, med to halvmåner som tar tak i røret. Ideen var at halvmånene skulle klemme til når skruen gikk i positiv retning, og løse opp når den skulle gå i negativ retning for å hente mer rør. Problemet med denne løsningen er at den bare tar tak i nedre del av halvmånen. Når dette skal rotere vil det skape et uønsket moment. Dette ble løst ved å montere på en til klype på toppen av halvmånene, og laget et slags hus. Men ved nærmere ettertanke ble det avklart at det ble for avansert å produsere. Det var det nåværende gripehuset ble konstruert. Det er større og mer robust, og skal fungere på samme måte med at det griper til i positiv retning og slipper opp i negativ retning. Dette kan enklere produseres da det er brukt forskjellige typer standardiserte stålkomponenter. I motsetning til de første to ideene hvor lift-tongen måtte vært skjært ut i ulike former. 
+Prosessen med å finne en mekanisme for å mate røret i Z-retning var den mest krevende. En av de første ideene var en lift-tong festet til en ledeskrue, med to halvmåner som tar tak i røret, dette er illustrert i figur \ref{grip1} Ideen var at halvmånene skulle klemme til når skruen gikk i positiv retning, og løse opp når den skulle gå i negativ retning for å hente mer rør. Problemet med denne løsningen er at den bare tar tak i nedre del av halvmånen. Når dette skal rotere vil det skape et uønsket moment. Dette ble løst ved å montere på en til klype på toppen av halvmånene, og laget et slags hus, som man kan se i figur \ref{grip2}. Men ved nærmere ettertanke ble det avklart at det ble for avansert å produsere. Det var det nåværende gripehuset ble konstruert, figur \ref{grip3} Det er større og mer robust, og skal fungere på samme måte med at det griper til i positiv retning og slipper opp i negativ retning. Dette kan enklere produseres da det er brukt forskjellige typer standardiserte stålkomponenter. I motsetning til de første to ideene hvor lift-tongen måtte vært skjært ut i ulike former. 
 \begin{figure}
 \centering
 \includegraphics[scale=0.3]{Pics/GripeKonsept.PNG}
@@ -357,7 +356,7 @@ Ut i fra figur \ref{graf} kan man se av $\alpha$ = 0,712 rad
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.5]{Pics/ugraf.png}
+\includegraphics[scale=0.5]{Pics/graf1.eps}
 \caption[Graf]{Grafen viser sammenhengen mellom $u$ og $\alpha$}
 \label{graf}
 \end{figure}
@@ -420,17 +419,19 @@ P_L&=&N_1\cdot\cos(\frac{\pi}{2}-\alpha)\nonumber\\
 
 
 \subsection{Opplagring}
+
+\clearpage
 \section{Rotasjon av rør}
 Ifølge kravspesifikasjonen skal røret kunne rotere $\pm45^\circ$. Maksimalt nødvendig moment for å kunne rotere røret oppstår når røret roteres mot bøyeretningen. Det vil være avhengig av friksjonen pga. $P_{u}$ og smøring i det sfæriske lageret. 
 
-\begin{figure}
+\begin{figure}[h!]
 \centering
 \includegraphics[scale=0.4]{Pics/sylinder2}
 \caption[Sylinder 1]{Første ide til hvordan rotere røret}
 \label{syl1}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h!]
 \centering
 \includegraphics[scale=0.4]{Pics/Sylinderny.png}
 \caption[Sylinder 2]{Hvordan rotasjonsmekanismen ble seende ut til slutt}
@@ -440,20 +441,35 @@ Ifølge kravspesifikasjonen skal røret kunne rotere $\pm45^\circ$. Maksimalt nødv
 \subsection{Elektrisk sylinder}
 \section{Bøyemekanisme}
 \subsection{Sfærisk lager}
+Det sfæriske lageret er formet som en kule, som sitter fast mellom to skiver. 
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{Pics/Kuttoye}
+\caption[Sfærisk lager]{Hvordan det sfæriske øyet er utformet innvendig}
+\label{sferiskkutt}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{Pics/rontgenoye}
+\caption[Sfærisk lager]{Hvordan det sfæriske lageret ser ut festet i mellom skivene}
+\label{sferisk1}
+\end{figure}
+\clearpage
+
 \section{XY-bord}
 Systemet er basert på samme prinsipp som en fres. XY-bordet fungerer på samme måte som et verktøy som beveger seg i XY-planet. Matingen i Z-aksen tilsvarer Z-bevegelsen til verktøyet, og rotasjonen av røret tilsvarer «spindle-speed». 
 
 
 I det gitte senarioet i figur \ref{FLD} vil den maksimale kraften som utsetter på skruen være 
-
-$N_1-\cos \alpha$. I og med at røret bøyes i Y-retning, i forhold til koordinatsystemet til maskinen, vil skruen i Y-retning ta opp all kraften. Hadde man tatt samme senario, men vridd røret så det bøydes med samme grader i X-retning, ville det vært skruen i X-retning som tok opp kreftene. Man kan da konkludere med at skal man fordele kreftene mellom de to skruene vil det være hensiktsmessig å rotere røret slik at det sto midt i planet mellom X og Y. 
+$N_1 \cdot \cos \alpha$. I og med at røret bøyes i Y-retning, i forhold til koordinatsystemet til maskinen, vil skruen i Y-retning ta opp all kraften. Hadde man tatt samme senario, men vridd røret så det bøydes med samme grader i X-retning, ville det vært skruen i X-retning som tok opp kreftene. Man kan da konkludere med at skal man fordele kreftene mellom de to skruene vil det være hensiktsmessig å rotere røret slik at det sto midt i planet mellom X og Y. 
 
 
 Vi fant den maksimale bøyeradien maskinen kan oppnå til å være alpha=0.712 rad. Det betyr at den maksimale kraften hver skrue vil være utsatt for, ved det mest ekstreme tilfelle vil være 
 
 \begin{equation}\label{}
-N_1- \cos\alpha=12 383,072 N - \cos 0,712\nonumber\\
-=8818,667 N
+N_s=N_1 \cdot \cos\alpha=12 383,072 N \cdot \cos 0,712
+=\underline{\underline{9373,433 N}}
 \end{equation}
 
 
@@ -477,6 +493,72 @@ N_1- \cos\alpha=12 383,072 N - \cos 0,712\nonumber\\
 
 \subsection{Ledeskinne}
 \subsection{Ledeskrue}
+Ledeskruene som er brukt er av typen trapesgjenget ledeskrue. Det er denne type skrue som er best egnet å bruke når man har en last som skal bevege seg i begge retninger\cite{MachineDesign}.  I figur \ref{acme} ser man hvordan trapesskruen er utformet i forhold til firkantgjenger og saggjenger. Trapesgjengen har en vinkel på $29^\circ$ mellom hver gjenge. Skruen som brukes i denne oppgaven har en ytre diameter på $ d_y=25mm $ og en indre diameter $ d_i=19mm $ og stinging på gjengene er $ P=5mm $.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pics/acme}
+\caption[Ledeskruer]{Bildet illustrerer tre forskjellige ledeskruer}
+\cite{MachineDesign}
+\label{acme}
+\end{figure}
+
+Momentet som oppstår når skruene går frem og tilbake er regnet ut ved å anvende et ligningsett fra Machine Design \cite{MachineDesign} som omhandler momentregning på en ledeskrue. Ligningssettet består av en ligning for momentet når skruen går fremover og en ligning for momentet når skruen går bakover. 
+
+Vi kan regne ut midtdiameteren på skruen ($d_p$ i figur \ref{acme}) som; (\cite{Midtdiameter})
+
+\begin{eqnarray}
+d_m&=&\frac{d_y+d_i}{2}\nonumber\\
+&=&\frac{25mm+19mm}{2}\nonumber\\
+&=&\underline{\underline{22mm}}
+\end{eqnarray}
+
+Når skruen går fremover blir momentet regnet ut som 
+
+\begin{eqnarray}
+M_F&=&M_{SF}+M_L\nonumber\\
+&=&\frac{N_S\cdot d_m}{2}\cdot \frac{(\mu_S\cdot \pi \cdot d_m + P\cdot \cos \alpha_t)}{(\pi\cdot d_m\cdot \cos \alpha_t - \mu_S\cdot P)}+\mu_L\cdot N_S \cdot \frac{d_L}{2}\nonumber\\
+&=&\frac{8818,667N\cdot 22mm}{2}\cdot \frac{(0,17\cdot \pi \cdot 22mm + 5mm\cdot \cos 14,5^\circ)}{(\pi\cdot 22mm\cdot \cos 14,5^\circ -0,17\cdot 5mm)}\nonumber\\
+&+&0,42\cdot 8818,667N \cdot \frac{20mm}{2}\nonumber\\
+&=&\underline{\underline{61 398,988 Nmm}}
+\end{eqnarray}
+
+Når skruen går bakover blir momentet regnet ut som 
+\begin{eqnarray}
+M_B&=&M_{SB}+M_L\nonumber\\
+&=&\frac{N_S\cdot d_m}{2}\cdot \frac{(\mu_S\cdot \pi \cdot d_m - P\cdot \cos \alpha_t)}{(\pi\cdot d_m\cdot \cos \alpha_t + \mu_S\cdot P)}+\mu_L\cdot N_S \cdot \frac{d_L}{2}\nonumber\\
+&=&\frac{8818,667N\cdot 22mm}{2}\cdot \frac{(0,17\cdot \pi \cdot 22mm - 5mm\cdot \cos 14,5^\circ)}{(\pi\cdot 22mm\cdot \cos 14,5^\circ + 0,17\cdot 5mm)}\nonumber\\
+&+&0,42\cdot 8818,667N \cdot \frac{20mm}{2}\nonumber\\
+&=&\underline{\underline{46 928,558Nmm}}
+\end{eqnarray}
+
+$ Hvor: $ 
+
+$M_L$=Momentet fremover
+
+$M_B$=Momentet bakover
+
+$M_{SF}$=Momentet fra skruen fremover
+
+$M_{SB}$=Momentet fra skruen bakover
+
+$M_L$=Momentet fra lageret 
+
+$N_S$=Kraften som påføres skruen 
+
+$P$=Stigningen i gjengen 
+
+$d_m$=Midtdiameter på skruen 
+
+$\alpha_t$=Vinkel på trapesgjengene i grader
+
+$d_L$=Diameter på lager \cite{IgusQ2}
+
+$\mu_S$=Friksjon stål mot stål med smøring \cite{Friksjon}
+
+$\mu_L$=Friksjon stål mot lager \cite{IgusQ2}\\
+
+$ M_F $ og $ M_B $ blir da det totale momentet som trengs for å bevege lasten frem og tilbake. Som tidligere er det brukt krefter for det mest ekstreme tilfellet maskinen kommer til å oppnå. Så dette momentet vil også være det største mulige. 
 \subsection{Motorer}
 \section{Motordrivere}
 \section{Mach3-software}
@@ -737,8 +819,61 @@ v=40.33;
 x=(v/sin(a)*(1-cos(a))-15);
 end
 \end{lstlisting}
+\chapter{} 
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/BakersteVegg}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/H-bjelke}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/Plate}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/mellomplate}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/veggoye}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/skinner}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/Vogn}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/Skrue}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/Mutter}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/Stuss}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/sferisklager1}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/sferiskfest1}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/sferiskfest2}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/FesteMotor}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/MotorBrakettX}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/MotorBrakettY}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/opplagring}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/kopling}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/Matelager}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/Sylinderfeste}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/matelagersyl}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/materplattform}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/materbjelke}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/materarm}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/materfjerholder}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/materhalvmane}
+%
+%\includegraphics[scale=0.49,angle=90,origin=c]{Vedlegg/materfjer}
 
-\chapter{}
 \bibliographystyle{plainnat}
 \bibliography{bibliografiDatabase}{}
 

@@ -17,26 +17,26 @@
 \contentsline {section}{\numberline {3.4}Mating av r\IeC {\o }r}{9}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Gripehus}{11}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Opplagring}{12}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Rotasjon av r\IeC {\o }r}{12}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Elektrisk sylinder}{14}{subsection.3.5.1}
-\contentsline {section}{\numberline {3.6}B\IeC {\o }yemekanisme}{14}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Sf\IeC {\ae }risk lager}{14}{subsection.3.6.1}
-\contentsline {section}{\numberline {3.7}XY-bord}{14}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Ledeskinne}{15}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Ledeskrue}{15}{subsection.3.7.2}
-\contentsline {subsection}{\numberline {3.7.3}Motorer}{15}{subsection.3.7.3}
-\contentsline {section}{\numberline {3.8}Motordrivere}{15}{section.3.8}
-\contentsline {section}{\numberline {3.9}Mach3-software}{15}{section.3.9}
-\contentsline {subsection}{\numberline {3.9.1}CAD til G-code}{18}{subsection.3.9.1}
-\contentsline {chapter}{\numberline {4}Resultater}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Analyse}{19}{section.4.1}
-\contentsline {section}{\numberline {4.2}Testing av r\IeC {\o }r}{19}{section.4.2}
-\contentsline {chapter}{\numberline {5}Diskusjon}{20}{chapter.5}
-\contentsline {section}{\numberline {5.1}Prinsipper, Forhold, Generaliseringer}{20}{section.5.1}
-\contentsline {section}{\numberline {5.2}Presentasjon av analyse, modell eller teori}{20}{section.5.2}
-\contentsline {section}{\numberline {5.3}(Utfordringer)}{20}{section.5.3}
-\contentsline {section}{\numberline {5.4}(Mulige forbedringer)}{20}{section.5.4}
-\contentsline {chapter}{\numberline {6}Konklusjon}{21}{chapter.6}
-\contentsline {chapter}{\numberline {A}}{22}{appendix.A}
-\contentsline {chapter}{\numberline {B}}{24}{appendix.B}
-\contentsline {chapter}{\numberline {C}}{25}{appendix.C}
+\contentsline {section}{\numberline {3.5}Rotasjon av r\IeC {\o }r}{13}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Elektrisk sylinder}{13}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.6}B\IeC {\o }yemekanisme}{13}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Sf\IeC {\ae }risk lager}{13}{subsection.3.6.1}
+\contentsline {section}{\numberline {3.7}XY-bord}{15}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Ledeskinne}{16}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Ledeskrue}{16}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}Motorer}{17}{subsection.3.7.3}
+\contentsline {section}{\numberline {3.8}Motordrivere}{17}{section.3.8}
+\contentsline {section}{\numberline {3.9}Mach3-software}{17}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}CAD til G-code}{20}{subsection.3.9.1}
+\contentsline {chapter}{\numberline {4}Resultater}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Analyse}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Testing av r\IeC {\o }r}{21}{section.4.2}
+\contentsline {chapter}{\numberline {5}Diskusjon}{22}{chapter.5}
+\contentsline {section}{\numberline {5.1}Prinsipper, Forhold, Generaliseringer}{22}{section.5.1}
+\contentsline {section}{\numberline {5.2}Presentasjon av analyse, modell eller teori}{22}{section.5.2}
+\contentsline {section}{\numberline {5.3}(Utfordringer)}{22}{section.5.3}
+\contentsline {section}{\numberline {5.4}(Mulige forbedringer)}{22}{section.5.4}
+\contentsline {chapter}{\numberline {6}Konklusjon}{23}{chapter.6}
+\contentsline {chapter}{\numberline {A}}{24}{appendix.A}
+\contentsline {chapter}{\numberline {B}}{26}{appendix.B}
+\contentsline {chapter}{\numberline {C}}{27}{appendix.C}

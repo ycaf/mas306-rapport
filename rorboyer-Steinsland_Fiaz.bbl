@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,6 +12,8 @@ Igus.
 
 \bibitem[IgusG()]{IgusG}
 IgusG.
+\newblock iglidur® g, sleeve bearing with flange, mm.
+\newblock URL \url{https://www.igus.no/product/?artnr=GFM-343850-35}.
 
 \bibitem[IgusQ2()]{IgusQ2}
 IgusQ2.
@@ -24,11 +26,23 @@ Industriskolen.
 \newblock URL
   \url{http://www.niskolen.no/pil/Medlem/Kurs/cnc_teknikk/story_content/external_files/CNC_VG2.pdf}.
 
+\bibitem[Mekanex()]{Midtdiameter}
+Mekanex.
+\newblock Trapesgjengede skruer og muttere.
+\newblock URL
+  \url{https://www.mekanex.no/produkter/komponenter/trapesgjengede-skruer-og-muttere/}.
+
 \bibitem[Network()]{NorskDatakunnskapNetwork}
 Norsk~Datakunnskap Network.
 \newblock Hva er cnc-maskiner.
 \newblock URL
   \url{http://www.datamaskin.biz/Programmering/computer-programming-languages/88807.html#.WtSP6C_JLL8}.
+
+\bibitem[Norton(2014)]{MachineDesign}
+Robert~L. Norton.
+\newblock \emph{Machine Design, and integrated approach}.
+\newblock Pearson Education, fifth edition, 2014.
+\newblock page:898-901.
 
 \bibitem[Sclater(2011)]{N.Sclater}
 Neil Sclater.
@@ -42,5 +56,10 @@ M.R.~Hansen W.~Pawlus, M.~Choux.
   drilling equipment.
 \newblock \emph{Modeling, Identification and Control}, \penalty0 (1):\penalty0
   4--6, 2016.
+
+\bibitem[Wikipedia()]{Friksjon}
+Wikipedia.
+\newblock Leadscrew.
+\newblock URL \url{https://en.wikipedia.org/wiki/Leadscrew}.
 
 \end{thebibliography}
