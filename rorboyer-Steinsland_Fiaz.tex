@@ -17,6 +17,7 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amsfonts}
+\usepackage[titletoc]{appendix}% http://ctan.org/pkg/appendices
 
 
 %% Line Spacing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -465,7 +466,77 @@ Grunnet begrenset tid ble oppgaven redusert til å fokusere på det gruppen har va
 \subsection{Ledeskinne}
 \subsection{Ledeskrue}
 \subsection{Motorer}
+Å lage en nøyaktig matematisk modell av motorene var vanskelig, da det var lite informasjon tilgjengelig om dem. 
+
+\begin{itemize}
+	\item Motor kontinuerlig effekt: $230\ W$
+	\item Motor maks effekt: $1050\ W$
+	\item DC-spenning: $22.5\ V$
+	\item Kontinuerlig moment: $6,779\ Nm$ ved $9\ A$
+	\item Maks moment: $45,19\ Nm$ ved $60\ A$
+	\item Hastighet ved kontinuerlig moment: \\
+	\begin{equation}\label{ctdspd}
+	s = \dfrac{P}{T} = \frac{230\ W}{6,779\ Nm} = 33,928\ \bigg[\dfrac{rad}{sec}\bigg]
+	\end{equation}
+	\item Hastighet ved maks moment: \\
+	\begin{equation}\label{maxspd}
+	s = \dfrac{P}{T} = \frac{1050\ W}{45,19\ Nm} = 23,24\ \bigg[\dfrac{rad}{sec}\bigg]
+	\end{equation}
+\end{itemize}
+Informasjon om moment fikk man først etter flere runder med e-post utveksling som resulterte i følgende informasjon: \\
+\begin{quote}
+\textit{'' - 60 lb/inches at 9 amp.  This would be continuous.\\
+-           400 lb/inches at 60 amps.  This would be no more than 5 seconds over a 10 minute span.''}
+\end{quote}
+Her antas det at \textit{''lb/inches'' } er \textit{pound force inch} $ (lbf \cdot in) $. Enhetene konvertert fra pound force inches til Newton meter ved hjelp av Wolfram Alpha.
+
+Informasjon som mangler er:
+	\begin{itemize}
+	\item Armatur resistans, $ R_a $
+	\item Spenningskonstant, $ K_e $
+	\item Momentkonstant, $ K_t $
+	\item Motorens treghetsmoment, $J$
+	\item Termisk motstand, $ R_{th} $
+	\end{itemize}
 \section{Motordrivere}
+Treghetsmomentene til motoren og lasten vil være med på å avgjøre hvor presis motoren er i sine bevegelser. Ved Step/Dir-signaler vil det oppstå små bevegelser ved hvert step som generer en step-respons. Denne responsen vil være for liten til å gjøre meningsfulle analyser av presisjonen til motoren. Ved å impuls-belaste motoren for man en tydeligere transient-respons, slik at lettere lar seg analysere.
+Driveren benytter seg av kaskaderegulering av motorens posisjon. I tuning-programvaren kan man justere følgende parametere:
+\begin{itemize}
+	\item $ K_p $: For høy proporsjonal-gain vil gi større svingninger og et mer ustabilt system, men minske steady-state-error.
+\item $ K_{aff} $: Posisjons-følge-feil under akselerasjon. Denne motvirker treghetsmomentet i systemet under akselerasjonen i en bevegelse.
+\item $ K_d $: Derivativ gain. Brukes for å redusere overshoot. Brukes gjerne dersom $K_p$ produserer for mye overshoot.
+\item $ V_p $: Hastighets-proporsjonal-gain. 
+\item $ V_i $: Hastighets-integral-gain
+\item $ CAM_n $ og $ CAM_d $: For å sette elektronisk gir. 
+\item $ PositionFollowErrLimit $: Grense for forskjell mellom ønsket posisjon og målt posisjon.
+\item $ Encoderlines $: Denne gjelder kun for selv-test funksjonaliteten i driveren
+\item $ edge $:
+\item $ reverse $:
+\end{itemize}
+
+Hastighetsprofil under testing:
+
+Posisjonsloop-tuning er avhengig av belastninger i systemet og skal derfor gjøres med motoren installert i systemet. Da matesystemet ikke er produsert, vil tuning bare skje med motoren installert på ledeskrue med stålplate.
+Posisjonsloop-tuning
+Posisjonsloop-tuning skjer på to forskjellige måter: Tuning med hensyn på hastighetsloop, og med hensyn på moment. Hastighetsloop kan vøre nyttig dersom det er nødvendig med presise bevegelser mellom start og slutt. Mens tuning med hensyn på momentloop er for punkt-til-punkt og situasjoner hvor hastighetspresisjon mellom start- og slutt punkt ikke er så viktig. 
+Støy
+
+Å kjøre motoren via DCS810-driveren genererte ubehagelig, høylytt støy. Flere forsøk ble gjort på å fjerne/redusere dette støyet. Undersøkelser på internett resulterte stort sett i problemstillinger som har med kontrollsignalet å gjøre, da feilinnstilt kontrollsignal kan komme ned i frekvenser som menneskeøret kan oppfatte. I dette tilfellet var det dog ikke kontrollsignalet som genererte ulyden fordi den var tilstede også må med kontroll-kort frakoblet. Det ble undersøkt om det er dårlig forbindelse mellom enkoder og motor. Konklusjonen var at tilkoblingen er tilstrekkelig, da man ved å vri på koblingen som sitter på motorakslingen kunne rotere både motoraksel og enkoder-aksel uten slark. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.55]{Pics/enkoderKoblingLowRes.jpg}
+	\caption[Enkoderkobling]{Motor-enkoder kobling, uten feste-hus til enkoder. Slanger er brukt som festeanordning mellom motor og enkoder.}
+	\label{encKob}
+\end{figure}
+\pagebreak
+
+Én annen mulig forklaring på støyet kan være at man ikke fikk tunet motordriveren. Årsaken var at det ikke var mulig å opprette en forbindelse mellom PC og driver. I følge Leadshine, skal det brukes en såkalt «Special cable». Kabelen det er snakk om er en RS232 seriell forbindelse. Da man ikke hadde en slik kabel, måtte den lages. Det ble først kjøpt inn en RS232-til-USB adapter. Denne bestod av en Standard 4-pin USB på den ene siden og en DB9-hannkontakt. For å koble dette sammen ble dokument fra Leadshine brukt som referanse (Se tillegg [[[[]]]] ) Det ble oversett at dette er for en DB9-hunkontakt, og som resultat ble feil pins koblet til. Dette kan ha skadet RS232-inngangen på driveren. Av frykt for ikke å ødelegge flere drivere, tok det lang tid før flere drivere ble testet. 
+Dersom Vp/Kp er satt for lavt kan dette lage mye støy. 
+«Over-current protection» utløst
+
+Etter flere sekunder ble Over-current protection utløst på x-akse motoren. 
+
 \section{Mach3-software}
 Systemet er basert på samme prinsipp som en fres. XY-bordet fungerer på samme måte som et verktøy som beveger seg i XY-planet. Matingen i Z-aksen tilsvarer Z-bevegelsen til verktøyet, og rotasjonen av røret tilsvarer «spindle-speed».
 
@@ -552,6 +623,9 @@ Mach3 steps per unit = Mach3 steps per rev x Motor revs per unit
 
 For posisjonsgjenkjenning ble det brukt en kvadraturenkoder. Denne har 600 åpninger i skiven sin, og genererer 4 utpulser per åpning, som gir totalt 2400 utpulser. 
 
+\textbf{Videre testing i Mach3}
+For å sette mer nøyaktig antall $ Mach3 steps per millimeter $, kalibreres hver akse via "Settings" og "Set Steps per Unit". Antall ønsket forflytning i millimeter skrives inn i dialogboksen. Dette får motoren til å bevege seg forsøke å bevege seg den ønskedelengden basert på antall $ Mach3 steps per millimeter $ som ble angitt i "Motor Tuning". Deretter måles antall millimeter den faktisk beveget seg, og man setter det inn i neste dialogboks. Mach3 foreslår så en ny $ "Mach3 steps per millimeter" $ basert på målingen.
+
 Andre styringskomponenter:
 
 \begin{itemize}
@@ -589,11 +663,8 @@ Nødvendig u, for en gitt bøyeradius, R er avhengig av materialet (og rørdiameter
 
 \chapter{Konklusjon}
 
-
-\appendix
-
-
-\chapter{}
+\begin{appendices}
+\chapter{Arduino kode for enkoder}
 \label{arduinoKode}
 \begin{lstlisting}
 #define encoder0PinA 2
@@ -676,7 +747,7 @@ encoder0Pos = encoder0Pos - 1; // CCW
 }
 
 \end{lstlisting}
-\chapter{}
+\chapter{Matlab kode}
 \begin{lstlisting}
 % Initialize
 clear all
@@ -711,9 +782,8 @@ x=(v/sin(a)*(1-cos(a))-15);
 end
 \end{lstlisting}
 
-\chapter{}
 \bibliographystyle{plainnat}
 \bibliography{bibliografiDatabase}{}
-
+\end{appendices}
 \end{document}
 
